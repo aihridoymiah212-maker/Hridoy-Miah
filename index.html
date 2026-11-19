@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09090B">
   <title>Hridoy Miah | Digital Designer & AI Creative Expert</title>
   
   <!-- SEO Meta Tags -->
@@ -16,6 +17,11 @@
   <meta property="og:title" content="Hridoy Miah | Digital Designer & AI Creative Expert">
   <meta property="og:description" content="Creative Designs. Innovative Ideas. Digital Excellence. High-quality digital assets, AI-powered visuals, and vector graphics.">
   <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://res.cloudinary.com/f6xzztna/image/upload/v1794984418/IMG_9110__1_-removebg-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hridoy Miah | Digital Designer & AI Creative Expert">
+  <meta name="twitter:description" content="Creative Designs. Innovative Ideas. Digital Excellence. High-quality digital assets, AI-powered visuals, and vector graphics.">
+  <meta name="twitter:image" content="https://res.cloudinary.com/f6xzztna/image/upload/v1794984418/IMG_9110__1_-removebg-preview.png">
   
   <!-- Favicon (Creative Vector Logo) -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%232563EB'/><stop offset='100%' stop-color='%237C3AED'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='%230B1220'/><path d='M30 25 v50 M30 50 h24 M54 25 v50' stroke='url(%23g)' stroke-width='10' stroke-linecap='round'/><circle cx='74' cy='32' r='7' fill='%2322D3EE'/></svg>">
@@ -180,7 +186,16 @@
     .faq-accordion-content {
       transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     }
+    /* Accessibility & premium polish: calm motion for users who prefer it, clear keyboard focus */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+      html { scroll-behavior: auto; }
+    }
+    :focus-visible { outline: 2px solid rgba(255, 255, 255, 0.65); outline-offset: 2px; }
   </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "Person", "name": "Hridoy Miah", "jobTitle": "Digital Designer & AI Creative Expert", "url": "https://aihridoymiah212-maker.github.io/Hridoy-Miah/", "address": {"@type": "PostalAddress", "addressLocality": "Tangail", "addressCountry": "BD"}, "sameAs": ["https://github.com/aihridoymiah212-maker", "https://www.youtube.com/@HridoyZBD", "https://bd.linkedin.com/in/hridoy-miah-zbd", "https://www.facebook.com/md.hridoy.9256/"]}
+  </script>
 </head>
 <body class="bg-navy-950 text-content-body font-body antialiased selection:bg-accent-blue selection:text-white min-h-screen relative flex flex-col justify-between overflow-x-hidden">
 
@@ -229,7 +244,7 @@
 
   <!-- ==================== 2. GLOBAL FIXED NAVBAR ==================== -->
   <header id="site-header" class="fixed top-0 left-0 right-0 z-50 bg-[#09090B]/95 backdrop-blur-md border-b border-zinc-800/80 transition-all">
-    <div class="max-w-[1200px] mx-auto flex items-center justify-between px-4 sm:px-6 py-4">
+    <div id="header-inner" class="max-w-[1200px] mx-auto flex items-center justify-between px-4 sm:px-6 py-4 transition-all duration-300">
       
       <!-- Left: Logo text "{{FULL_NAME}}" in bold white linking to #home -->
       <a href="#home" class="flex items-center gap-3.5 group focus:outline-none select-none">
@@ -367,7 +382,7 @@
             <div class="relative flex items-center justify-center">
               
               <!-- Blue Gradient Glow Behind Photo -->
-              <div class="absolute w-[256px] h-[256px] lg:w-[420px] lg:h-[420px] rounded-full bg-gradient-to-tr from-accent-blue via-accent-violet to-accent-cyan opacity-35 blur-2xl -z-10 animate-pulse pointer-events-none"></div>
+              <div class="absolute w-[256px] h-[256px] lg:w-[420px] lg:h-[420px] rounded-full bg-gradient-to-tr from-accent-blue via-accent-violet to-accent-cyan opacity-35 blur-2xl -z-10 pointer-events-none"></div>
 
               <!-- Circular Photo Container: 420px on Desktop, 256px on Mobile with Blue-to-Cyan Gradient Border Ring -->
               <div class="relative w-[256px] h-[256px] lg:w-[420px] lg:h-[420px] rounded-full p-[3px] bg-gradient-to-tr from-accent-blue via-accent-violet to-accent-cyan shadow-glow-blue select-none">
@@ -1997,7 +2012,7 @@
 
       <!-- Bottom Bar with Thin Top Border -->
       <div class="pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-content-muted text-center sm:text-left">
-        <p>© 2026 Hridoy Miah. All rights reserved. | <a href="#" class="hover:text-white transition-colors">Privacy Policy</a></p>
+        <p>© 2026 Hridoy Miah. All rights reserved. | <span class="hover:text-white transition-colors">Privacy Policy</span></p>
         <p class="text-[11px] text-slate-500">Creative Designs. Innovative Ideas. Digital Excellence.</p>
       </div>
 
@@ -2017,9 +2032,15 @@
       const progressBar = document.getElementById('loading-progress-bar');
       const progressText = document.getElementById('loading-progress-text');
 
+      if (sessionStorage.getItem('hm_intro_seen') && loadingScreen) {
+        loadingScreen.style.display = 'none';
+      } else {
+        sessionStorage.setItem('hm_intro_seen', '1');
+      }
+
       let progress = 0;
       const interval = setInterval(() => {
-        progress += Math.floor(Math.random() * 12) + 8;
+        progress += Math.floor(Math.random() * 22) + 16;
         if (progress >= 100) {
           progress = 100;
           clearInterval(interval);
@@ -2033,12 +2054,12 @@
                 loadingScreen.style.display = 'none';
               }, 700);
             }
-          }, 350);
+          }, 150);
         } else {
           if (progressBar) progressBar.style.width = `${progress}%`;
           if (progressText) progressText.textContent = `${progress}%`;
         }
-      }, 70);
+      }, 50);
 
       // --- 2. Mobile Menu Toggle ---
       const mobileMenuBtn = document.getElementById('mobileMenuBtn');
@@ -2076,7 +2097,7 @@
       }
 
       // --- 3. Navbar Elevation on Scroll ---
-      const siteHeader = document.getElementById('site-header');
+      const siteHeader = document.getElementById('header-inner');
       window.addEventListener('scroll', () => {
         if (window.scrollY > 40) {
           siteHeader.classList.add('py-2');
@@ -2306,6 +2327,7 @@
         }, { threshold: 0.1 });
 
         revealElements.forEach(el => revealObserver.observe(el));
+      }
 
       // --- 11. Project Category Filter ---
       const filterBtns = document.querySelectorAll('.project-filter-btn');
@@ -2332,8 +2354,6 @@
           });
         });
       });
-
-      }
     });
   </script>
 
