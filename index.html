@@ -1,0 +1,2337 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth overflow-x-hidden">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hridoy Miah | Digital Designer & AI Creative Expert</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Hridoy Miah — Digital Designer, Adobe Stock Contributor, and AI Creative Content Creator specializing in vector illustrations, digital assets, stock content, and visual design.">
+  <meta name="keywords" content="Hridoy Miah, Digital Designer, AI Creative Designer, Adobe Stock Contributor, Vector Illustrations, Stock Content, Graphic Design, Tangail, Bangladesh">
+  <meta name="author" content="Hridoy Miah">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hridoy Miah | Digital Designer & AI Creative Expert">
+  <meta property="og:description" content="Creative Designs. Innovative Ideas. Digital Excellence. High-quality digital assets, AI-powered visuals, and vector graphics.">
+  <meta property="og:locale" content="en_US">
+  
+  <!-- Favicon (Creative Vector Logo) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%232563EB'/><stop offset='100%' stop-color='%237C3AED'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='%230B1220'/><path d='M30 25 v50 M30 50 h24 M54 25 v50' stroke='url(%23g)' stroke-width='10' stroke-linecap='round'/><circle cx='74' cy='32' r='7' fill='%2322D3EE'/></svg>">
+  
+  <!-- Google Fonts: Syne (Ultra-modern Brand Display), Space Grotesk (Tech Headings) & Plus Jakarta Sans (Clean Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Syne:wght@700;800;900&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              950: '#09090B', // Luxury Obsidian / Zinc 950
+              900: '#121215', // Premium Dark Gray 900
+              850: '#18181B', // Deep Charcoal 850
+            },
+            accent: {
+              blue: '#FFFFFF',    // Crisp Pure White
+              violet: '#E4E4E7',  // Silver Platinum
+              cyan: '#F4F4F5',    // Bright Silver
+              green: '#10B981',   // Minimal Emerald Status Dot
+              gold: '#F59E0B',    // Clean Rating Gold
+            },
+            content: {
+              heading: '#FFFFFF', // Pure White Headings
+              body: '#A1A1AA',    // Sleek Silver Gray Text
+              muted: '#71717A',    // Cool Muted Gray
+            }
+          },
+          fontFamily: {
+            brand: ['Syne', 'sans-serif'],
+            heading: ['"Space Grotesk"', 'Outfit', 'sans-serif'],
+            body: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          maxWidth: {
+            'container': '1200px',
+          },
+          borderRadius: {
+            'card': '18px',
+          },
+          boxShadow: {
+            'soft': '0 10px 30px -5px rgba(0, 0, 0, 0.7), 0 0 1px 1px rgba(255, 255, 255, 0.08)',
+            'glow-blue': '0 0 30px rgba(255, 255, 255, 0.12)',
+            'glow-violet': '0 0 30px rgba(255, 255, 255, 0.1)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Global Design System Custom CSS -->
+  <style>
+    /* Custom Luxury Monochrome Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #09090B;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #A1A1AA 0%, #3F3F46 100%);
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #FFFFFF;
+    }
+
+    /* Core Pill Buttons - Ultra-clean White & Glass */
+    .btn-primary-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 9999px;
+      background: #FFFFFF;
+      color: #09090B;
+      font-weight: 700;
+      padding: 0.65rem 1.75rem;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 4px 15px -3px rgba(255, 255, 255, 0.25);
+    }
+    .btn-primary-pill:hover {
+      background: #E4E4E7;
+      box-shadow: 0 8px 25px -4px rgba(255, 255, 255, 0.4);
+      transform: translateY(-3px);
+    }
+
+    .btn-secondary-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #E4E4E7;
+      font-weight: 500;
+      padding: 0.65rem 1.75rem;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .btn-secondary-pill:hover {
+      border-color: rgba(255, 255, 255, 0.5);
+      color: #FFFFFF;
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateY(-3px);
+    }
+
+    /* Core Card Style with Monochrome Hover Lift & Glow */
+    .card-navy {
+      background-color: #121215;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 18px;
+      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.6);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.35s ease;
+    }
+    .card-navy:hover {
+      border-color: rgba(255, 255, 255, 0.25);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.8), 0 0 25px rgba(255, 255, 255, 0.06);
+    }
+
+    /* Metallic Silver / Pure White Gradient Text */
+    .text-gradient-accent {
+      background: linear-gradient(135deg, #FFFFFF 15%, #E4E4E7 55%, #A1A1AA 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Typewriter Cursor */
+    .typewriter-cursor {
+      display: inline-block;
+      width: 2px;
+      background-color: #FFFFFF;
+      animation: blink 0.8s infinite;
+      margin-left: 2px;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    /* Section Fade & Slide-in Animation on Scroll */
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+    .reveal-on-scroll.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Smooth FAQ Accordion Transition */
+    .faq-accordion-content {
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+  </style>
+</head>
+<body class="bg-navy-950 text-content-body font-body antialiased selection:bg-accent-blue selection:text-white min-h-screen relative flex flex-col justify-between overflow-x-hidden">
+
+  <!-- ==================== 1. LOADING SCREEN ==================== -->
+  <div id="loading-screen" class="fixed inset-0 z-[9999] bg-[#09090B] flex flex-col items-center justify-center p-6 transition-opacity duration-700 select-none">
+    <div class="max-w-md w-full text-center flex flex-col items-center">
+      
+      <!-- Logo Monogram -->
+      <div class="w-16 h-16 rounded-full bg-white flex items-center justify-center mb-6 shadow-lg shadow-white/20 animate-pulse shrink-0">
+        <span class="font-heading font-black text-2xl text-[#09090B] tracking-tight leading-none select-none">
+          HM
+        </span>
+      </div>
+
+      <!-- FULL_NAME -->
+      <h1 class="text-2xl sm:text-3xl font-brand font-black text-white tracking-tight mb-2">
+        Hridoy Miah
+      </h1>
+
+      <!-- TITLE -->
+      <p class="text-xs sm:text-sm font-medium text-zinc-400 tracking-wide mb-8 max-w-sm">
+        Digital Designer | Adobe Stock Contributor | AI Creative Designer | Content Creator
+      </p>
+
+      <!-- Animated Progress Bar Container -->
+      <div class="w-full max-w-xs h-1.5 bg-zinc-800 rounded-full overflow-hidden relative mb-3">
+        <div id="loading-progress-bar" class="h-full bg-gradient-to-r from-white via-zinc-400 to-zinc-200 rounded-full transition-all duration-200 w-0"></div>
+      </div>
+
+      <!-- Progress Percentage Text -->
+      <div class="flex items-center justify-between w-full max-w-xs text-[11px] text-content-muted font-mono">
+        <span>Loading Portfolio</span>
+        <span id="loading-progress-text">0%</span>
+      </div>
+
+    </div>
+  </div>
+  <!-- ==================== END LOADING SCREEN ==================== -->
+
+
+  <!-- ==================== RIGHT EDGE SCROLL PROGRESS BAR ==================== -->
+  <div id="scroll-progress-container" class="fixed right-0 top-0 bottom-0 w-1 sm:w-1.5 z-50 bg-zinc-900/60 pointer-events-none">
+    <div id="scroll-progress-bar" class="w-full bg-gradient-to-b from-white via-zinc-400 to-zinc-600 h-0 transition-all duration-75"></div>
+  </div>
+
+
+  <!-- ==================== 2. GLOBAL FIXED NAVBAR ==================== -->
+  <header id="site-header" class="fixed top-0 left-0 right-0 z-50 bg-[#09090B]/95 backdrop-blur-md border-b border-zinc-800/80 transition-all">
+    <div class="max-w-[1200px] mx-auto flex items-center justify-between px-4 sm:px-6 py-4">
+      
+      <!-- Left: Logo text "{{FULL_NAME}}" in bold white linking to #home -->
+      <a href="#home" class="flex items-center gap-3.5 group focus:outline-none select-none">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white flex items-center justify-center shrink-0 shadow-md shadow-white/10 group-hover:scale-105 transition-transform duration-300">
+          <span class="font-heading font-black text-[#09090B] text-xs sm:text-sm tracking-tight leading-none select-none">
+            HM
+          </span>
+        </div>
+        <div class="flex flex-col text-left">
+          <span class="font-brand font-black text-white text-2xl sm:text-[28px] tracking-tight group-hover:text-zinc-200 transition-colors leading-none">
+            Hridoy <span class="text-gradient-accent">Miah</span>
+          </span>
+          <span class="text-[10px] font-bold uppercase tracking-[0.22em] text-content-muted mt-1">
+            Digital & AI Designer
+          </span>
+        </div>
+      </a>
+
+      <!-- Center Menu: HOME, WHO AM I?, SOLUTIONS, RESULTS, CONTACT -->
+      <nav class="hidden md:flex items-center gap-7">
+        <a href="#home" class="nav-link text-xs lg:text-sm font-semibold tracking-wider text-content-body hover:text-white transition-colors">HOME</a>
+        <a href="#about" class="nav-link text-xs lg:text-sm font-semibold tracking-wider text-content-body hover:text-white transition-colors">WHO AM I?</a>
+        <a href="#services" class="nav-link text-xs lg:text-sm font-semibold tracking-wider text-content-body hover:text-white transition-colors">SOLUTIONS</a>
+        <a href="#results" class="nav-link text-xs lg:text-sm font-semibold tracking-wider text-content-body hover:text-white transition-colors">RESULTS</a>
+        <a href="#contact" class="nav-link text-xs lg:text-sm font-semibold tracking-wider text-content-body hover:text-white transition-colors">CONTACT</a>
+      </nav>
+
+      <!-- Right: Blue-to-violet gradient pill button "Let's Talk" linking to #contact -->
+      <div class="hidden md:flex items-center">
+        <a href="#contact" class="btn-primary-pill text-xs !py-2.5 !px-6">
+          <span>Let's Talk</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobileMenuBtn" aria-label="Toggle Navigation" class="md:hidden w-10 h-10 rounded-full bg-slate-800/80 border border-slate-700 flex items-center justify-center text-slate-200 hover:text-white focus:outline-none">
+        <i id="menuIcon" class="fa-solid fa-bars text-sm"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu (Collapsed on mobile) -->
+    <div id="mobileMenu" class="md:hidden hidden bg-[#0B1220] border-b border-slate-800 px-6 py-5">
+      <div class="flex flex-col gap-3">
+        <a href="#home" class="mobile-nav-link text-sm font-semibold tracking-wider text-slate-300 hover:text-white py-2 px-3 rounded-lg hover:bg-slate-800/60 transition-colors">HOME</a>
+        <a href="#about" class="mobile-nav-link text-sm font-semibold tracking-wider text-slate-300 hover:text-white py-2 px-3 rounded-lg hover:bg-slate-800/60 transition-colors">WHO AM I?</a>
+        <a href="#services" class="mobile-nav-link text-sm font-semibold tracking-wider text-slate-300 hover:text-white py-2 px-3 rounded-lg hover:bg-slate-800/60 transition-colors">SOLUTIONS</a>
+        <a href="#results" class="mobile-nav-link text-sm font-semibold tracking-wider text-slate-300 hover:text-white py-2 px-3 rounded-lg hover:bg-slate-800/60 transition-colors">RESULTS</a>
+        <a href="#contact" class="mobile-nav-link text-sm font-semibold tracking-wider text-slate-300 hover:text-white py-2 px-3 rounded-lg hover:bg-slate-800/60 transition-colors">CONTACT</a>
+        <div class="pt-3 border-t border-slate-800">
+          <a href="#contact" class="btn-primary-pill text-xs !py-2.5 w-full text-center block">
+            <span>Let's Talk</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ==================== 3. MAIN SECTION CONTAINERS ==================== -->
+  <main class="relative z-10 flex-grow pt-24">
+
+    <!-- ==================== SECTION: HOME (#home) ==================== -->
+    <!-- Background: Very dark navy #0B1220 -->
+    <section id="home" class="min-h-[calc(100vh-6rem)] flex items-center justify-center py-16 lg:py-24 px-4 sm:px-6 lg:px-8 bg-navy-950">
+      <div class="max-w-container mx-auto w-full">
+        
+        <!-- 2 Columns on Desktop, Vertically Stacked on Mobile -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Left Column: Content -->
+          <div class="lg:col-span-7 flex flex-col items-start text-left order-2 lg:order-1">
+            
+            <!-- Availability Pill Badge with Green Dot -->
+            <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-700/80 text-xs font-semibold text-slate-200 mb-6 shadow-sm">
+              <span class="relative flex h-2.5 w-2.5">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-green opacity-80"></span>
+                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-accent-green"></span>
+              </span>
+              <span>Available for New Projects</span>
+            </div>
+
+            <!-- Large Bold Heading with Typewriter Rotating Phrase -->
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-heading font-extrabold text-white tracking-tight leading-[1.18] mb-5">
+              What I can build for you:<br />
+              <span id="hero-typewriter" class="text-gradient-accent"></span><span class="typewriter-cursor h-7 sm:h-9 lg:h-11 align-middle"></span>
+            </h1>
+
+            <!-- 2 Lines of Subtext from Bio -->
+            <p class="text-content-body text-sm sm:text-base leading-relaxed max-w-xl mb-3">
+              I specialize in creating high-quality digital designs, creative illustrations, vector graphics, backgrounds, patterns, and visually engaging stock content.
+            </p>
+            <p class="text-content-body text-sm sm:text-base leading-relaxed max-w-xl mb-8">
+              Using modern design techniques and AI-powered creative tools, I develop unique, professional, and commercially useful digital assets for businesses and creators worldwide.
+            </p>
+
+            <!-- Two Buttons: Primary Gradient & Outlined -->
+            <div class="flex flex-wrap items-center gap-4 mb-8 w-full sm:w-auto">
+              <a href="#contact" class="btn-primary-pill text-sm !py-3 !px-7 w-full sm:w-auto text-center">
+                <span>Work With Me</span>
+                <i class="fa-solid fa-paper-plane ml-2 text-xs"></i>
+              </a>
+
+              <a href="https://drive.google.com/drive/folders/13yHaDn4SO4IPdfaV0zpcReSkItZhzIyX" target="_blank" rel="noopener noreferrer" class="btn-secondary-pill text-sm !py-3 !px-7 w-full sm:w-auto text-center flex items-center justify-center gap-2">
+                <i class="fa-solid fa-file-arrow-down text-accent-cyan text-xs"></i>
+                <span>Download CV</span>
+              </a>
+            </div>
+
+            <!-- Icon-only Social Links: Facebook, LinkedIn, GitHub, WhatsApp, Telegram -->
+            <div class="flex items-center gap-3">
+              <a href="https://www.facebook.com/md.hridoy.9256/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-white hover:border-slate-500 hover:bg-slate-800 transition-all text-sm">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://bd.linkedin.com/in/hridoy-miah-zbd" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-white hover:border-slate-500 hover:bg-slate-800 transition-all text-sm">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/aihridoymiah212-maker" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-white hover:border-slate-500 hover:bg-slate-800 transition-all text-sm">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://wa.me/8801629820808" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-accent-green hover:border-accent-green/40 hover:bg-slate-800 transition-all text-sm">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="https://t.me/+8801629820808" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-accent-cyan hover:border-accent-cyan/40 hover:bg-slate-800 transition-all text-sm">
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Circular Portrait Photo with Glow & Floating Stat Cards -->
+          <div class="lg:col-span-5 flex justify-center items-center order-1 lg:order-2">
+            <div class="relative flex items-center justify-center">
+              
+              <!-- Blue Gradient Glow Behind Photo -->
+              <div class="absolute w-[256px] h-[256px] lg:w-[420px] lg:h-[420px] rounded-full bg-gradient-to-tr from-accent-blue via-accent-violet to-accent-cyan opacity-35 blur-2xl -z-10 animate-pulse pointer-events-none"></div>
+
+              <!-- Circular Photo Container: 420px on Desktop, 256px on Mobile with Blue-to-Cyan Gradient Border Ring -->
+              <div class="relative w-[256px] h-[256px] lg:w-[420px] lg:h-[420px] rounded-full p-[3px] bg-gradient-to-tr from-accent-blue via-accent-violet to-accent-cyan shadow-glow-blue select-none">
+                <div class="w-full h-full rounded-full overflow-hidden bg-gradient-to-b from-slate-800 to-navy-950 flex items-center justify-center">
+                  <img 
+                    src="https://res.cloudinary.com/f6xzztna/image/upload/v1794984418/IMG_9110__1_-removebg-preview.png" 
+                    alt="Hridoy Miah" 
+                    class="w-full h-full object-cover object-top scale-105"
+                    loading="eager"
+                  />
+                </div>
+              </div>
+
+              <!-- Floating Stat Card 1: {{YEARS_EXPERIENCE}}+ Experience -->
+              <div class="absolute -top-2 -left-2 sm:top-6 sm:-left-6 bg-navy-900 border border-slate-700/80 px-4 py-2.5 rounded-2xl shadow-soft flex items-center gap-3 backdrop-blur-md">
+                <div class="w-8 h-8 rounded-xl bg-accent-blue/15 text-accent-cyan flex items-center justify-center text-xs">
+                  <i class="fa-solid fa-clock-rotate-left"></i>
+                </div>
+                <div>
+                  <span class="block text-sm font-extrabold text-white">3+ Years</span>
+                  <span class="block text-[10px] text-content-muted font-medium">Experience</span>
+                </div>
+              </div>
+
+              <!-- Floating Stat Card 2: {{PROJECTS_COMPLETED}}+ Projects Done -->
+              <div class="absolute -bottom-2 -right-2 sm:bottom-6 sm:-right-6 bg-navy-900 border border-slate-700/80 px-4 py-2.5 rounded-2xl shadow-soft flex items-center gap-3 backdrop-blur-md">
+                <div class="w-8 h-8 rounded-xl bg-accent-green/15 text-accent-green flex items-center justify-center text-xs">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div>
+                  <span class="block text-sm font-extrabold text-white">50+ Done</span>
+                  <span class="block text-[10px] text-content-muted font-medium">Projects Done</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- ==================== END SECTION: HOME ==================== -->
+
+
+    <!-- ==================== SECTION: ABOUT (#about) ==================== -->
+    <!-- Background: Slightly lighter #0F172A (alternating subtly) -->
+    <section id="about" class="py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-navy-900 border-t border-slate-800/60 reveal-on-scroll">
+      <div class="max-w-container mx-auto w-full">
+        
+        <!-- Section Header -->
+        <div class="text-left mb-14">
+          <!-- Eyebrow in small uppercase: "WHO AM I" -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-slate-800/90 border border-slate-700/80 text-accent-cyan text-xs font-bold uppercase tracking-wider mb-4">
+            WHO AM I
+          </div>
+          
+          <!-- Heading based on {{TITLE}} and {{BIO}} -->
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-white tracking-tight mb-3">
+            Digital Designer & <span class="text-gradient-accent">AI Creative Expert</span>
+          </h2>
+
+          <!-- Subheading: one line about focusing on real business problems, not just services -->
+          <p class="text-content-muted text-sm sm:text-base max-w-2xl leading-relaxed">
+            Focusing on commercial utility and real business impact, delivering high-value digital assets rather than just generic design services.
+          </p>
+        </div>
+
+        <!-- 2 Columns on Desktop, Vertically Stacked on Mobile -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center mb-16">
+          
+          <!-- Left Column: Portrait image in a card with badge "{{YEARS_EXPERIENCE}}+ Years Experience" -->
+          <div class="lg:col-span-5 relative max-w-[420px] mx-auto lg:mx-0 w-full">
+            <div class="relative card-navy p-3 sm:p-4 rounded-card overflow-hidden">
+              <img 
+                src="https://res.cloudinary.com/f6xzztna/image/upload/v1794984412/Contemplative_Man_in_Dramatic_Studio_Light.png" 
+                alt="Hridoy Miah - Digital Designer & AI Creative Expert" 
+                class="w-full aspect-[4/5] object-cover rounded-[14px]"
+                loading="lazy"
+              />
+
+              <!-- Badge: {{YEARS_EXPERIENCE}}+ Years Experience -->
+              <div class="absolute bottom-6 left-6 right-6 sm:right-auto bg-[#0B1220]/95 backdrop-blur-md border border-slate-700/80 px-4 py-2.5 rounded-2xl shadow-soft flex items-center gap-3">
+                <div class="w-8 h-8 rounded-xl bg-accent-blue/20 text-accent-cyan flex items-center justify-center text-sm font-bold">
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <div>
+                  <span class="block text-sm font-extrabold text-white">3+ Years Experience</span>
+                  <span class="block text-[10px] text-content-muted font-medium">Digital & Stock Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: 2-3 lines of body text from BIO + 4 feature rows with blue icon tiles -->
+          <div class="lg:col-span-7 flex flex-col justify-center text-left">
+            
+            <!-- 2-3 Lines of Body Text from Bio about Approach -->
+            <p class="text-content-body text-sm sm:text-base leading-relaxed mb-3">
+              I use modern design techniques and AI-powered creative tools to develop unique, professional, and commercially useful digital assets.
+            </p>
+            <p class="text-content-body text-sm sm:text-base leading-relaxed mb-8">
+              My goal is to create original, high-quality visual content for designers, businesses, marketers, and creative professionals worldwide, ensuring every asset delivers tangible visual value.
+            </p>
+
+            <!-- 4 Feature Rows with Blue Icon Tiles -->
+            <div class="flex flex-col gap-5">
+              
+              <!-- Feature Row 1 -->
+              <div class="flex items-start gap-4">
+                <div class="w-11 h-11 rounded-xl bg-accent-blue/15 text-accent-cyan border border-accent-blue/25 flex items-center justify-center shrink-0 text-base shadow-sm">
+                  <i class="fa-solid fa-pen-nib"></i>
+                </div>
+                <div>
+                  <h3 class="text-sm sm:text-base font-bold text-white mb-0.5">Vector Illustration & Stock Graphics</h3>
+                  <p class="text-content-muted text-xs sm:text-sm leading-relaxed">Clean, scalable vector illustrations and digital stock assets optimized for worldwide commercial use.</p>
+                </div>
+              </div>
+
+              <!-- Feature Row 2 -->
+              <div class="flex items-start gap-4">
+                <div class="w-11 h-11 rounded-xl bg-accent-blue/15 text-accent-cyan border border-accent-blue/25 flex items-center justify-center shrink-0 text-base shadow-sm">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <div>
+                  <h3 class="text-sm sm:text-base font-bold text-white mb-0.5">AI-Assisted Digital Asset Design</h3>
+                  <p class="text-content-muted text-xs sm:text-sm leading-relaxed">Creating photorealistic and creative AI visuals engineered through precise prompt architecture.</p>
+                </div>
+              </div>
+
+              <!-- Feature Row 3 -->
+              <div class="flex items-start gap-4">
+                <div class="w-11 h-11 rounded-xl bg-accent-blue/15 text-accent-cyan border border-accent-blue/25 flex items-center justify-center shrink-0 text-base shadow-sm">
+                  <i class="fa-solid fa-border-all"></i>
+                </div>
+                <div>
+                  <h3 class="text-sm sm:text-base font-bold text-white mb-0.5">Background & Seamless Pattern Design</h3>
+                  <p class="text-content-muted text-xs sm:text-sm leading-relaxed">Designing repeatable patterns, gradient backgrounds, and minimalist textures for print and digital brands.</p>
+                </div>
+              </div>
+
+              <!-- Feature Row 4 -->
+              <div class="flex items-start gap-4">
+                <div class="w-11 h-11 rounded-xl bg-accent-blue/15 text-accent-cyan border border-accent-blue/25 flex items-center justify-center shrink-0 text-base shadow-sm">
+                  <i class="fa-solid fa-share-nodes"></i>
+                </div>
+                <div>
+                  <h3 class="text-sm sm:text-base font-bold text-white mb-0.5">Engaging Social Media & Marketing Visuals</h3>
+                  <p class="text-content-muted text-xs sm:text-sm leading-relaxed">High-converting promotional banners, thumbnails, and creative layouts built to elevate online presence.</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- 3 Mini-Stats at the Bottom -->
+        <div class="pt-10 border-t border-slate-800/80 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+          
+          <!-- Mini-Stat 1 -->
+          <div class="card-navy p-5 rounded-2xl">
+            <div class="text-2xl sm:text-3xl font-heading font-extrabold text-white mb-1" data-target="3" data-suffix="+">
+              3+
+            </div>
+            <div class="text-xs sm:text-sm font-medium text-content-muted">
+              Years of Experience
+            </div>
+          </div>
+
+          <!-- Mini-Stat 2 -->
+          <div class="card-navy p-5 rounded-2xl">
+            <div class="text-2xl sm:text-3xl font-heading font-extrabold text-white mb-1" data-target="50" data-suffix="+">
+              50+
+            </div>
+            <div class="text-xs sm:text-sm font-medium text-content-muted">
+              Projects Completed
+            </div>
+          </div>
+
+          <!-- Mini-Stat 3 -->
+          <div class="card-navy p-5 rounded-2xl">
+            <div class="text-2xl sm:text-3xl font-heading font-extrabold text-white mb-1" data-target="40" data-suffix="+">
+              40+
+            </div>
+            <div class="text-xs sm:text-sm font-medium text-content-muted">
+              Happy Clients
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- ==================== END SECTION: ABOUT ==================== -->
+
+
+    <!-- ==================== SECTION: SERVICES (#services) ==================== -->
+    <!-- Background: Slightly lighter #111827 (alternating subtly) -->
+    <section id="services" class="py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-navy-850 border-t border-slate-800/60 reveal-on-scroll">
+      <div class="max-w-container mx-auto w-full">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <!-- Eyebrow: "WHAT I DO" -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-slate-800/90 border border-slate-700/80 text-accent-cyan text-xs font-bold uppercase tracking-wider mb-4">
+            WHAT I DO
+          </div>
+
+          <!-- Heading: "Problems I Solve, Not Just Services I Offer" -->
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-white tracking-tight mb-4">
+            Problems I Solve, <span class="text-gradient-accent">Not Just Services I Offer</span>
+          </h2>
+
+          <!-- Subtext: one line that I fix specific problems holding growth back, with a clear system and process -->
+          <p class="text-content-muted text-sm sm:text-base leading-relaxed">
+            I fix specific visual bottlenecks and design inconsistencies holding brand growth back, using a clear creative system and proven workflow.
+          </p>
+        </div>
+
+        <!-- 8 Service Cards: 4x2 Grid on Desktop, 2 Columns on Tablet, 1 Column on Mobile -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Card 1: Graphic Design -->
+          <div class="card-navy p-6 rounded-card border border-slate-800 flex flex-col justify-between hover:-translate-y-1.5 hover:border-accent-blue/40 hover:shadow-glow-blue transition-all duration-300 group">
+            <div>
+              <!-- Coloured Icon Tile on Top-Left -->
+              <div class="w-12 h-12 rounded-xl bg-accent-blue/15 text-accent-cyan border border-accent-blue/25 flex items-center justify-center text-lg mb-5 group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-pen-nib"></i>
+              </div>
+
+              <!-- Service Title -->
+              <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-accent-cyan transition-colors">
+                Graphic Design
+              </h3>
+
+              <!-- 1-2 Sentence Description -->
+              <p class="text-content-body text-xs sm:text-sm leading-relaxed mb-5">
+                Professional and creative graphic designs tailored for businesses, brands, and modern digital platforms.
+              </p>
+
+              <!-- 4 Bullet Points with Green Checkmarks -->
+              <ul class="space-y-2 mb-6 text-xs text-slate-300">
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Social Media Graphics</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Promotional Banners</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Marketing Designs</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Creative Layouts</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Learn More Link -->
+            <div class="pt-4 border-t border-slate-800/80">
+              <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-semibold text-accent-cyan hover:text-white transition-colors group-hover:translate-x-1 duration-200">
+                <span>Learn More</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: AI Image Generation -->
+          <div class="card-navy p-6 rounded-card border border-slate-800 flex flex-col justify-between hover:-translate-y-1.5 hover:border-accent-violet/40 hover:shadow-glow-violet transition-all duration-300 group">
+            <div>
+              <!-- Coloured Icon Tile on Top-Left -->
+              <div class="w-12 h-12 rounded-xl bg-accent-violet/15 text-accent-violet border border-accent-violet/25 flex items-center justify-center text-lg mb-5 group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+
+              <!-- Service Title -->
+              <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-accent-violet transition-colors">
+                AI Image Generation
+              </h3>
+
+              <!-- 1-2 Sentence Description -->
+              <p class="text-content-body text-xs sm:text-sm leading-relaxed mb-5">
+                Creating unique, high-quality visuals using modern AI image generation tools and creative prompt architecture.
+              </p>
+
+              <!-- 4 Bullet Points with Green Checkmarks -->
+              <ul class="space-y-2 mb-6 text-xs text-slate-300">
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Realistic AI Images</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Creative AI Artwork</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Commercial Visual Concepts</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>AI Image Editing</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Learn More Link -->
+            <div class="pt-4 border-t border-slate-800/80">
+              <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-semibold text-accent-cyan hover:text-white transition-colors group-hover:translate-x-1 duration-200">
+                <span>Learn More</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Vector Illustration Design -->
+          <div class="card-navy p-6 rounded-card border border-slate-800 flex flex-col justify-between hover:-translate-y-1.5 hover:border-accent-cyan/40 hover:shadow-glow-blue transition-all duration-300 group">
+            <div>
+              <!-- Coloured Icon Tile on Top-Left -->
+              <div class="w-12 h-12 rounded-xl bg-accent-cyan/15 text-accent-cyan border border-accent-cyan/25 flex items-center justify-center text-lg mb-5 group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-bezier-curve"></i>
+              </div>
+
+              <!-- Service Title -->
+              <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-accent-cyan transition-colors">
+                Vector Illustration Design
+              </h3>
+
+              <!-- 1-2 Sentence Description -->
+              <p class="text-content-body text-xs sm:text-sm leading-relaxed mb-5">
+                Creating clean, infinitely scalable, and visually appealing vector-style illustrations for branding and assets.
+              </p>
+
+              <!-- 4 Bullet Points with Green Checkmarks -->
+              <ul class="space-y-2 mb-6 text-xs text-slate-300">
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Vector Illustrations</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Flat Illustrations</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Minimalist Artwork</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Silhouette Graphics</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Learn More Link -->
+            <div class="pt-4 border-t border-slate-800/80">
+              <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-semibold text-accent-cyan hover:text-white transition-colors group-hover:translate-x-1 duration-200">
+                <span>Learn More</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4: Adobe Stock Content Creation -->
+          <div class="card-navy p-6 rounded-card border border-slate-800 flex flex-col justify-between hover:-translate-y-1.5 hover:border-accent-gold/40 hover:shadow-soft transition-all duration-300 group">
+            <div>
+              <!-- Coloured Icon Tile on Top-Left -->
+              <div class="w-12 h-12 rounded-xl bg-accent-gold/15 text-accent-gold border border-accent-gold/25 flex items-center justify-center text-lg mb-5 group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-award"></i>
+              </div>
+
+              <!-- Service Title -->
+              <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-accent-gold transition-colors">
+                Adobe Stock Content Creation
+              </h3>
+
+              <!-- 1-2 Sentence Description -->
+              <p class="text-content-body text-xs sm:text-sm leading-relaxed mb-5">
+                Developing creative stock assets compliant with commercial licensing requirements for global marketplaces.
+              </p>
+
+              <!-- 4 Bullet Points with Green Checkmarks -->
+              <ul class="space-y-2 mb-6 text-xs text-slate-300">
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Stock Illustrations</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Digital Assets</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Commercial Backgrounds</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Creative Stock Graphics</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Learn More Link -->
+            <div class="pt-4 border-t border-slate-800/80">
+              <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-semibold text-accent-cyan hover:text-white transition-colors group-hover:translate-x-1 duration-200">
+                <span>Learn More</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 5: Background & Texture Design -->
+          <div class="card-navy p-6 rounded-card border border-slate-800 flex flex-col justify-between hover:-translate-y-1.5 hover:border-rose-500/40 hover:shadow-soft transition-all duration-300 group">
+            <div>
+              <!-- Coloured Icon Tile on Top-Left -->
+              <div class="w-12 h-12 rounded-xl bg-rose-500/15 text-rose-400 border border-rose-500/25 flex items-center justify-center text-lg mb-5 group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-cubes-stacked"></i>
+              </div>
+
+              <!-- Service Title -->
+              <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-rose-400 transition-colors">
+                Background & Texture Design
+              </h3>
+
+              <!-- 1-2 Sentence Description -->
+              <p class="text-content-body text-xs sm:text-sm leading-relaxed mb-5">
+                Designing attractive backgrounds, atmospheric gradients, and authentic textures for digital and print media.
+              </p>
+
+              <!-- 4 Bullet Points with Green Checkmarks -->
+              <ul class="space-y-2 mb-6 text-xs text-slate-300">
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Abstract Backgrounds</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Gradient Backgrounds</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Nature Backgrounds</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Seamless Textures</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Learn More Link -->
+            <div class="pt-4 border-t border-slate-800/80">
+              <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-semibold text-accent-cyan hover:text-white transition-colors group-hover:translate-x-1 duration-200">
+                <span>Learn More</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 6: Seamless Pattern Design -->
+          <div class="card-navy p-6 rounded-card border border-slate-800 flex flex-col justify-between hover:-translate-y-1.5 hover:border-emerald-500/40 hover:shadow-soft transition-all duration-300 group">
+            <div>
+              <!-- Coloured Icon Tile on Top-Left -->
+              <div class="w-12 h-12 rounded-xl bg-emerald-500/15 text-emerald-400 border border-emerald-500/25 flex items-center justify-center text-lg mb-5 group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-border-all"></i>
+              </div>
+
+              <!-- Service Title -->
+              <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-emerald-400 transition-colors">
+                Seamless Pattern Design
+              </h3>
+
+              <!-- 1-2 Sentence Description -->
+              <p class="text-content-body text-xs sm:text-sm leading-relaxed mb-5">
+                Creating repeatable geometric and organic patterns for packaging, textile products, branding, and creative projects.
+              </p>
+
+              <!-- 4 Bullet Points with Green Checkmarks -->
+              <ul class="space-y-2 mb-6 text-xs text-slate-300">
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Geometric Patterns</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Floral Patterns</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Abstract Patterns</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Decorative Patterns</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Learn More Link -->
+            <div class="pt-4 border-t border-slate-800/80">
+              <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-semibold text-accent-cyan hover:text-white transition-colors group-hover:translate-x-1 duration-200">
+                <span>Learn More</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 7: Social Media Design -->
+          <div class="card-navy p-6 rounded-card border border-slate-800 flex flex-col justify-between hover:-translate-y-1.5 hover:border-sky-500/40 hover:shadow-soft transition-all duration-300 group">
+            <div>
+              <!-- Coloured Icon Tile on Top-Left -->
+              <div class="w-12 h-12 rounded-xl bg-sky-500/15 text-sky-400 border border-sky-500/25 flex items-center justify-center text-lg mb-5 group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-share-nodes"></i>
+              </div>
+
+              <!-- Service Title -->
+              <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-sky-400 transition-colors">
+                Social Media Design
+              </h3>
+
+              <!-- 1-2 Sentence Description -->
+              <p class="text-content-body text-xs sm:text-sm leading-relaxed mb-5">
+                Creating engaging visual content to improve brand presentation, click-through rates, and online audience presence.
+              </p>
+
+              <!-- 4 Bullet Points with Green Checkmarks -->
+              <ul class="space-y-2 mb-6 text-xs text-slate-300">
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Facebook Posts</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Instagram Graphics</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>YouTube Thumbnails</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Promotional Banners</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Learn More Link -->
+            <div class="pt-4 border-t border-slate-800/80">
+              <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-semibold text-accent-cyan hover:text-white transition-colors group-hover:translate-x-1 duration-200">
+                <span>Learn More</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 8: AI Video & Creative Content -->
+          <div class="card-navy p-6 rounded-card border border-slate-800 flex flex-col justify-between hover:-translate-y-1.5 hover:border-purple-500/40 hover:shadow-soft transition-all duration-300 group">
+            <div>
+              <!-- Coloured Icon Tile on Top-Left -->
+              <div class="w-12 h-12 rounded-xl bg-purple-500/15 text-purple-400 border border-purple-500/25 flex items-center justify-center text-lg mb-5 group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-film"></i>
+              </div>
+
+              <!-- Service Title -->
+              <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-purple-400 transition-colors">
+                AI Video & Creative Content
+              </h3>
+
+              <!-- 1-2 Sentence Description -->
+              <p class="text-content-body text-xs sm:text-sm leading-relaxed mb-5">
+                Producing AI-assisted visual motion content, generative videos, and dynamic advertising assets for social media reach.
+              </p>
+
+              <!-- 4 Bullet Points with Green Checkmarks -->
+              <ul class="space-y-2 mb-6 text-xs text-slate-300">
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>AI Video Concepts</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Image-to-Video Creation</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Promotional Video Content</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-accent-green text-xs shrink-0"></i>
+                  <span>Creative Prompt Engineering</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Learn More Link -->
+            <div class="pt-4 border-t border-slate-800/80">
+              <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-semibold text-accent-cyan hover:text-white transition-colors group-hover:translate-x-1 duration-200">
+                <span>Learn More</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- ==================== END SECTION: SERVICES ==================== -->
+
+
+    <!-- ==================== SECTION: TOOLS (#tools) ==================== -->
+    <!-- Background: Very dark navy #0B1220 -->
+    <section id="tools" class="py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-navy-950 border-t border-slate-800/60 reveal-on-scroll">
+      <div class="max-w-container mx-auto w-full text-center">
+        
+        <!-- Heading: matched to field -->
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-white tracking-tight mb-3">
+          My Tools & <span class="text-gradient-accent">Creative Arsenal</span>
+        </h2>
+
+        <!-- Subtext -->
+        <p class="text-content-muted text-xs sm:text-sm max-w-xl mx-auto mb-10 leading-relaxed">
+          The tools and platforms I use to build, track, and scale your growth engine.
+        </p>
+
+        <!-- One Large Dark Rounded Container -->
+        <div class="card-navy p-5 sm:p-7 lg:p-9 rounded-[20px] border border-slate-800/80 shadow-soft max-w-5xl mx-auto">
+          
+          <!-- Chips in a 6x3 Grid on Desktop, 3 Columns on Mobile -->
+          <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-2.5 sm:gap-3.5">
+            
+            <!-- Chip 1: Adobe Illustrator -->
+            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-[#FF9A00]/50 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
+              <i class="fa-solid fa-pen-nib text-[#FF9A00] text-sm shrink-0 group-hover:scale-110 transition-transform"></i>
+              <span class="text-[11px] sm:text-xs font-semibold text-slate-200 group-hover:text-white transition-colors truncate">Illustrator</span>
+            </div>
+
+            <!-- Chip 2: Adobe Photoshop -->
+            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-[#31A8FF]/50 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
+              <i class="fa-solid fa-image text-[#31A8FF] text-sm shrink-0 group-hover:scale-110 transition-transform"></i>
+              <span class="text-[11px] sm:text-xs font-semibold text-slate-200 group-hover:text-white transition-colors truncate">Photoshop</span>
+            </div>
+
+            <!-- Chip 3: Canva -->
+            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-[#00C4CC]/50 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
+              <i class="fa-solid fa-paintbrush text-[#00C4CC] text-sm shrink-0 group-hover:scale-110 transition-transform"></i>
+              <span class="text-[11px] sm:text-xs font-semibold text-slate-200 group-hover:text-white transition-colors truncate">Canva</span>
+            </div>
+
+            <!-- Chip 4: ChatGPT -->
+            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-[#10A37F]/50 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
+              <i class="fa-solid fa-robot text-[#10A37F] text-sm shrink-0 group-hover:scale-110 transition-transform"></i>
+              <span class="text-[11px] sm:text-xs font-semibold text-slate-200 group-hover:text-white transition-colors truncate">ChatGPT</span>
+            </div>
+
+            <!-- Chip 5: Google Gemini -->
+            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-blue-400/50 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
+              <i class="fa-solid fa-sparkles text-blue-400 text-sm shrink-0 group-hover:scale-110 transition-transform"></i>
+              <span class="text-[11px] sm:text-xs font-semibold text-slate-200 group-hover:text-white transition-colors truncate">Gemini</span>
+            </div>
+
+            <!-- Chip 6: Google Flow -->
+            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-purple-400/50 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
+              <i class="fa-solid fa-diagram-project text-purple-400 text-sm shrink-0 group-hover:scale-110 transition-transform"></i>
+              <span class="text-[11px] sm:text-xs font-semibold text-slate-200 group-hover:text-white transition-colors truncate">Google Flow</span>
+            </div>
+
+            <!-- Chip 7: Veo -->
+            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-rose-400/50 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
+              <i class="fa-solid fa-film text-rose-400 text-sm shrink-0 group-hover:scale-110 transition-transform"></i>
+              <span class="text-[11px] sm:text-xs font-semibold text-slate-200 group-hover:text-white transition-colors truncate">Veo</span>
+            </div>
+
+            <!-- Chip 8: Pippit AI -->
+            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-amber-400/50 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
+              <i class="fa-solid fa-bolt text-amber-400 text-sm shrink-0 group-hover:scale-110 transition-transform"></i>
+              <span class="text-[11px] sm:text-xs font-semibold text-slate-200 group-hover:text-white transition-colors truncate">Pippit AI</span>
+            </div>
+
+            <!-- Chip 9: n8n -->
+            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-orange-400/50 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
+              <i class="fa-solid fa-network-wired text-orange-400 text-sm shrink-0 group-hover:scale-110 transition-transform"></i>
+              <span class="text-[11px] sm:text-xs font-semibold text-slate-200 group-hover:text-white transition-colors truncate">n8n</span>
+            </div>
+
+            <!-- Chip 10: AI Image Generation Tools -->
+            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-emerald-400/50 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
+              <i class="fa-solid fa-wand-magic text-emerald-400 text-sm shrink-0 group-hover:scale-110 transition-transform"></i>
+              <span class="text-[11px] sm:text-xs font-semibold text-slate-200 group-hover:text-white transition-colors truncate">AI Image Tools</span>
+            </div>
+
+            <!-- Chip 11: AI Video Generation Tools -->
+            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-indigo-400/50 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
+              <i class="fa-solid fa-video text-indigo-400 text-sm shrink-0 group-hover:scale-110 transition-transform"></i>
+              <span class="text-[11px] sm:text-xs font-semibold text-slate-200 group-hover:text-white transition-colors truncate">AI Video Tools</span>
+            </div>
+
+            <!-- Chip 12: AI Prompt Engineering Tools -->
+            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-cyan-400/50 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
+              <i class="fa-solid fa-terminal text-cyan-400 text-sm shrink-0 group-hover:scale-110 transition-transform"></i>
+              <span class="text-[11px] sm:text-xs font-semibold text-slate-200 group-hover:text-white transition-colors truncate">Prompt Tools</span>
+            </div>
+
+            <!-- Chip 13: AI Design & Editing Tools -->
+            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-sky-400/50 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
+              <i class="fa-solid fa-sliders text-sky-400 text-sm shrink-0 group-hover:scale-110 transition-transform"></i>
+              <span class="text-[11px] sm:text-xs font-semibold text-slate-200 group-hover:text-white transition-colors truncate">Design Tools</span>
+            </div>
+
+            <!-- Chip 14: Vector Graphics Tools -->
+            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-violet-400/50 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
+              <i class="fa-solid fa-bezier-curve text-violet-400 text-sm shrink-0 group-hover:scale-110 transition-transform"></i>
+              <span class="text-[11px] sm:text-xs font-semibold text-slate-200 group-hover:text-white transition-colors truncate">Vector Tools</span>
+            </div>
+
+            <!-- Chip 15: Stock Illustration Platforms -->
+            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-yellow-400/50 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
+              <i class="fa-solid fa-layer-group text-yellow-400 text-sm shrink-0 group-hover:scale-110 transition-transform"></i>
+              <span class="text-[11px] sm:text-xs font-semibold text-slate-200 group-hover:text-white transition-colors truncate">Stock Portals</span>
+            </div>
+
+            <!-- Chip 16: Background & Texture Design -->
+            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-pink-400/50 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
+              <i class="fa-solid fa-cubes text-pink-400 text-sm shrink-0 group-hover:scale-110 transition-transform"></i>
+              <span class="text-[11px] sm:text-xs font-semibold text-slate-200 group-hover:text-white transition-colors truncate">Textures</span>
+            </div>
+
+            <!-- Chip 17: Seamless Pattern Tools -->
+            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-teal-400/50 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
+              <i class="fa-solid fa-border-all text-teal-400 text-sm shrink-0 group-hover:scale-110 transition-transform"></i>
+              <span class="text-[11px] sm:text-xs font-semibold text-slate-200 group-hover:text-white transition-colors truncate">Pattern Tools</span>
+            </div>
+
+            <!-- Chip 18: Creative Asset Development -->
+            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-fuchsia-400/50 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
+              <i class="fa-solid fa-shapes text-fuchsia-400 text-sm shrink-0 group-hover:scale-110 transition-transform"></i>
+              <span class="text-[11px] sm:text-xs font-semibold text-slate-200 group-hover:text-white transition-colors truncate">Asset Studio</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- ==================== END SECTION: TOOLS ==================== -->
+
+
+        <!-- ==================== SECTION: RESULTS / PROJECTS (#results) ==================== -->
+    <section id="results" class="py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-navy-900 border-t border-zinc-800/80 reveal-on-scroll">
+      <div class="max-w-container mx-auto w-full">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-800/90 border border-zinc-700/80 text-zinc-300 text-xs font-semibold uppercase tracking-wider mb-4">
+            <i class="fa-solid fa-layer-group text-white"></i>
+            <span>Case Studies & Showcase</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-white tracking-tight mb-4">
+            Featured Projects & <span class="text-gradient-accent">Creative Results</span>
+          </h2>
+          <p class="text-content-muted text-sm sm:text-base leading-relaxed">
+            A curated selection of real-world design concepts, stock asset developments, AI visuals, and automated workflow solutions.
+          </p>
+        </div>
+
+        <!-- Filter Buttons (Vanilla JS) -->
+        <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12">
+          <button class="project-filter-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-white text-navy-950 shadow-md shadow-white/10" data-filter="all">
+            All Projects (6)
+          </button>
+          <button class="project-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-white/5 text-zinc-400 hover:text-white hover:bg-white/10 border border-white/5" data-filter="ai-art">
+            AI Image Generation
+          </button>
+          <button class="project-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-white/5 text-zinc-400 hover:text-white hover:bg-white/10 border border-white/5" data-filter="automation">
+            n8n Automation
+          </button>
+          <button class="project-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-white/5 text-zinc-400 hover:text-white hover:bg-white/10 border border-white/5" data-filter="content-seo">
+            Content & SEO
+          </button>
+          <button class="project-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-white/5 text-zinc-400 hover:text-white hover:bg-white/10 border border-white/5" data-filter="vector-stock">
+            Vector & Stock
+          </button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Project 1: Futuristic AI Expert Branding Banner -->
+          <div class="project-card card-navy rounded-3xl overflow-hidden border border-zinc-800/90 group flex flex-col justify-between transition-all duration-300 hover:border-zinc-600 hover:-translate-y-1.5" data-category="ai-art">
+            <div>
+              <div class="relative overflow-hidden aspect-[16/10] bg-zinc-950">
+                <img 
+                  src="https://res.cloudinary.com/f6xzztna/image/upload/v1794978409/Futuristic_AI_Expert_Branding_Banner.png" 
+                  alt="Futuristic AI Expert & Space Universe Visuals" 
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent opacity-75"></div>
+                <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-semibold bg-zinc-900/90 text-white border border-white/20 backdrop-blur-md">
+                  AI Image Generation
+                </span>
+              </div>
+
+              <div class="p-6">
+                <h3 class="text-lg font-heading font-bold text-white mb-2 group-hover:text-zinc-200 transition-colors">
+                  AI Space & Universe Visuals
+                </h3>
+                <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed mb-4">
+                  Created visually engaging space-themed concepts featuring planets, black holes, and cosmic environments with modern AI creative techniques.
+                </p>
+
+                <div class="flex flex-wrap gap-1.5 mb-2">
+                  <span class="px-2.5 py-1 rounded-lg text-[10px] font-medium bg-white/5 text-zinc-400 border border-white/5">Space</span>
+                  <span class="px-2.5 py-1 rounded-lg text-[10px] font-medium bg-white/5 text-zinc-400 border border-white/5">Universe</span>
+                  <span class="px-2.5 py-1 rounded-lg text-[10px] font-medium bg-white/5 text-zinc-400 border border-white/5">AI Art</span>
+                  <span class="px-2.5 py-1 rounded-lg text-[10px] font-medium bg-white/5 text-zinc-400 border border-white/5">Planets</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-6 pt-0">
+              <a href="https://res.cloudinary.com/f6xzztna/image/upload/v1794978409/Futuristic_AI_Expert_Branding_Banner.png" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-xl bg-white/5 hover:bg-white hover:text-navy-950 text-zinc-300 border border-white/10 text-xs font-semibold flex items-center justify-center gap-2 transition-all">
+                <span>View Full Resolution</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2: YouTube SEO & Channel Growth -->
+          <div class="project-card card-navy rounded-3xl overflow-hidden border border-zinc-800/90 group flex flex-col justify-between transition-all duration-300 hover:border-zinc-600 hover:-translate-y-1.5" data-category="content-seo">
+            <div>
+              <div class="relative overflow-hidden aspect-[16/10] bg-zinc-950">
+                <img 
+                  src="https://res.cloudinary.com/f6xzztna/image/upload/v1794978407/uuuu.png" 
+                  alt="YouTube SEO Project & Video Channel Optimization" 
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent opacity-75"></div>
+                <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-semibold bg-zinc-900/90 text-white border border-white/20 backdrop-blur-md">
+                  Digital Content & SEO
+                </span>
+              </div>
+
+              <div class="p-6">
+                <h3 class="text-lg font-heading font-bold text-white mb-2 group-hover:text-zinc-200 transition-colors">
+                  YouTube SEO & Video Promotion
+                </h3>
+                <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed mb-4">
+                  Developed end-to-end video SEO strategy, ranking optimization, and promotional thumbnail presentations to maximize audience reach and engagement.
+                </p>
+
+                <div class="flex flex-wrap gap-1.5 mb-2">
+                  <span class="px-2.5 py-1 rounded-lg text-[10px] font-medium bg-white/5 text-zinc-400 border border-white/5">YouTube SEO</span>
+                  <span class="px-2.5 py-1 rounded-lg text-[10px] font-medium bg-white/5 text-zinc-400 border border-white/5">Video Marketing</span>
+                  <span class="px-2.5 py-1 rounded-lg text-[10px] font-medium bg-white/5 text-zinc-400 border border-white/5">Thumbnails</span>
+                  <span class="px-2.5 py-1 rounded-lg text-[10px] font-medium bg-white/5 text-zinc-400 border border-white/5">Growth</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-6 pt-0">
+              <a href="https://res.cloudinary.com/f6xzztna/image/upload/v1794978407/uuuu.png" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-xl bg-white/5 hover:bg-white hover:text-navy-950 text-zinc-300 border border-white/10 text-xs font-semibold flex items-center justify-center gap-2 transition-all">
+                <span>View Full Resolution</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3: Content Writing & Strategic Marketing -->
+          <div class="project-card card-navy rounded-3xl overflow-hidden border border-zinc-800/90 group flex flex-col justify-between transition-all duration-300 hover:border-zinc-600 hover:-translate-y-1.5" data-category="content-seo">
+            <div>
+              <div class="relative overflow-hidden aspect-[16/10] bg-zinc-950">
+                <img 
+                  src="https://res.cloudinary.com/f6xzztna/image/upload/v1794978408/content.png" 
+                  alt="Content Writing & Creative Asset Development" 
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent opacity-75"></div>
+                <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-semibold bg-zinc-900/90 text-white border border-white/20 backdrop-blur-md">
+                  Creative Content Writing
+                </span>
+              </div>
+
+              <div class="p-6">
+                <h3 class="text-lg font-heading font-bold text-white mb-2 group-hover:text-zinc-200 transition-colors">
+                  Content Writing & Digital Assets
+                </h3>
+                <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed mb-4">
+                  Produced engaging, persuasive written content and visual marketing assets designed to elevate brand presentation and online presence.
+                </p>
+
+                <div class="flex flex-wrap gap-1.5 mb-2">
+                  <span class="px-2.5 py-1 rounded-lg text-[10px] font-medium bg-white/5 text-zinc-400 border border-white/5">Content Writing</span>
+                  <span class="px-2.5 py-1 rounded-lg text-[10px] font-medium bg-white/5 text-zinc-400 border border-white/5">Copywriting</span>
+                  <span class="px-2.5 py-1 rounded-lg text-[10px] font-medium bg-white/5 text-zinc-400 border border-white/5">Branding</span>
+                  <span class="px-2.5 py-1 rounded-lg text-[10px] font-medium bg-white/5 text-zinc-400 border border-white/5">Strategy</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-6 pt-0">
+              <a href="https://res.cloudinary.com/f6xzztna/image/upload/v1794978408/content.png" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-xl bg-white/5 hover:bg-white hover:text-navy-950 text-zinc-300 border border-white/10 text-xs font-semibold flex items-center justify-center gap-2 transition-all">
+                <span>View Full Resolution</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 4: n8n Messenger Automation Blueprint -->
+          <div class="project-card card-navy rounded-3xl overflow-hidden border border-zinc-800/90 group flex flex-col justify-between transition-all duration-300 hover:border-zinc-600 hover:-translate-y-1.5" data-category="automation">
+            <div>
+              <div class="relative overflow-hidden aspect-[16/10] bg-zinc-950">
+                <img 
+                  src="https://res.cloudinary.com/f6xzztna/image/upload/v1794978409/n8n_Messenger_Automation_Blueprint.png" 
+                  alt="n8n Messenger Automation Blueprint" 
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent opacity-75"></div>
+                <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-semibold bg-zinc-900/90 text-white border border-white/20 backdrop-blur-md">
+                  Workflow Automation
+                </span>
+              </div>
+
+              <div class="p-6">
+                <h3 class="text-lg font-heading font-bold text-white mb-2 group-hover:text-zinc-200 transition-colors">
+                  n8n Messenger Automation Blueprint
+                </h3>
+                <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed mb-4">
+                  Engineered an automated Messenger chatbot workflow blueprint with smart routing, webhook triggers, and AI response handling via n8n.
+                </p>
+
+                <div class="flex flex-wrap gap-1.5 mb-2">
+                  <span class="px-2.5 py-1 rounded-lg text-[10px] font-medium bg-white/5 text-zinc-400 border border-white/5">n8n</span>
+                  <span class="px-2.5 py-1 rounded-lg text-[10px] font-medium bg-white/5 text-zinc-400 border border-white/5">Automation</span>
+                  <span class="px-2.5 py-1 rounded-lg text-[10px] font-medium bg-white/5 text-zinc-400 border border-white/5">Messenger</span>
+                  <span class="px-2.5 py-1 rounded-lg text-[10px] font-medium bg-white/5 text-zinc-400 border border-white/5">Workflows</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-6 pt-0">
+              <a href="https://res.cloudinary.com/f6xzztna/image/upload/v1794978409/n8n_Messenger_Automation_Blueprint.png" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-xl bg-white/5 hover:bg-white hover:text-navy-950 text-zinc-300 border border-white/10 text-xs font-semibold flex items-center justify-center gap-2 transition-all">
+                <span>View Full Resolution</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 5: Adobe Stock - Grass Silhouette & Vector Assets -->
+          <div class="project-card card-navy rounded-3xl overflow-hidden border border-zinc-800/90 group flex flex-col justify-between transition-all duration-300 hover:border-zinc-600 hover:-translate-y-1.5" data-category="vector-stock">
+            <div>
+              <div class="relative overflow-hidden aspect-[16/10] bg-zinc-950">
+                <img 
+                  src="https://res.cloudinary.com/f6xzztna/image/upload/v1794985264/Gemini_Generated_Image_ts64ptts64ptts64.jpg" 
+                  alt="Adobe Stock Grass Silhouette Collection & Vector Art" 
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent opacity-75"></div>
+                <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-semibold bg-zinc-900/90 text-white border border-white/20 backdrop-blur-md flex items-center gap-1.5">
+                  <i class="fa-solid fa-award text-zinc-300"></i>
+                  <span>Adobe Stock Collection</span>
+                </span>
+              </div>
+
+              <div class="p-6">
+                <h3 class="text-lg font-heading font-bold text-white mb-2 group-hover:text-zinc-200 transition-colors">
+                  Grass Silhouette Collection
+                </h3>
+                <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed mb-4">
+                  Developed a creative collection of nature-inspired grass silhouette design concepts and commercially useful stock vector illustrations.
+                </p>
+
+                <div class="flex flex-wrap gap-1.5 mb-2">
+                  <span class="px-2.5 py-1 rounded-lg text-[10px] font-medium bg-white/5 text-zinc-400 border border-white/5">Grass</span>
+                  <span class="px-2.5 py-1 rounded-lg text-[10px] font-medium bg-white/5 text-zinc-400 border border-white/5">Silhouette</span>
+                  <span class="px-2.5 py-1 rounded-lg text-[10px] font-medium bg-white/5 text-zinc-400 border border-white/5">Nature</span>
+                  <span class="px-2.5 py-1 rounded-lg text-[10px] font-medium bg-white/5 text-zinc-400 border border-white/5">Adobe Stock</span>
+                  <span class="px-2.5 py-1 rounded-lg text-[10px] font-medium bg-white/5 text-zinc-400 border border-white/5">Vector</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-6 pt-0">
+              <a href="https://res.cloudinary.com/f6xzztna/image/upload/v1794985264/Gemini_Generated_Image_ts64ptts64ptts64.jpg" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-xl bg-white/5 hover:bg-white hover:text-navy-950 text-zinc-300 border border-white/10 text-xs font-semibold flex items-center justify-center gap-2 transition-all">
+                <span>View Full Resolution</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 6: Future Unlocked AI & Advertising -->
+          <div class="project-card card-navy rounded-3xl overflow-hidden border border-zinc-800/90 group flex flex-col justify-between transition-all duration-300 hover:border-zinc-600 hover:-translate-y-1.5" data-category="ai-art">
+            <div>
+              <div class="relative overflow-hidden aspect-[16/10] bg-zinc-950 flex items-center justify-center p-6 border-b border-white/5">
+                <div class="w-16 h-16 rounded-2xl bg-white/5 text-white border border-white/10 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
+                  <i class="fa-solid fa-atom"></i>
+                </div>
+                <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-semibold bg-zinc-900/90 text-white border border-white/20 backdrop-blur-md">
+                  Digital Content & AI Design
+                </span>
+              </div>
+
+              <div class="p-6">
+                <h3 class="text-lg font-heading font-bold text-white mb-2 group-hover:text-zinc-200 transition-colors">
+                  Future Unlocked AI - Science Visuals
+                </h3>
+                <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed mb-4">
+                  Developed creative visual concepts for science, technology, and mind-blowing space facts digital content and social campaigns.
+                </p>
+
+                <div class="flex flex-wrap gap-1.5 mb-2">
+                  <span class="px-2.5 py-1 rounded-lg text-[10px] font-medium bg-white/5 text-zinc-400 border border-white/5">Science</span>
+                  <span class="px-2.5 py-1 rounded-lg text-[10px] font-medium bg-white/5 text-zinc-400 border border-white/5">Technology</span>
+                  <span class="px-2.5 py-1 rounded-lg text-[10px] font-medium bg-white/5 text-zinc-400 border border-white/5">Space Facts</span>
+                  <span class="px-2.5 py-1 rounded-lg text-[10px] font-medium bg-white/5 text-zinc-400 border border-white/5">AI Design</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-6 pt-0">
+              <div class="w-full py-2.5 rounded-xl bg-white/5 text-zinc-400 text-xs font-semibold flex items-center justify-center gap-2 border border-white/5">
+                <span>Case Study Concept</span>
+                <i class="fa-solid fa-microchip text-[11px] text-white"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- ==================== END SECTION: RESULTS ==================== -->
+
+
+    <!-- ==================== STATS BAND (Below Results Section) ==================== -->
+    <!-- Full-width band with 4 columns, large bold numbers that count up, muted grey labels -->
+    <div id="stats-band" class="w-full py-14 lg:py-16 px-4 sm:px-6 lg:px-8 bg-navy-850 border-t border-b border-slate-800/80 reveal-on-scroll">
+      <div class="max-w-container mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12 text-center">
+          
+          <!-- Column 1: 3+ Years of Experience -->
+          <div class="flex flex-col items-center">
+            <div class="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-white tracking-tight mb-2" data-target="3" data-suffix="+">
+              0+
+            </div>
+            <div class="text-xs sm:text-sm font-medium text-content-muted">
+              Years of Experience
+            </div>
+          </div>
+
+          <!-- Column 2: 50+ Projects Completed -->
+          <div class="flex flex-col items-center">
+            <div class="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-white tracking-tight mb-2" data-target="50" data-suffix="+">
+              0+
+            </div>
+            <div class="text-xs sm:text-sm font-medium text-content-muted">
+              Projects Completed
+            </div>
+          </div>
+
+          <!-- Column 3: 40+ Happy Clients -->
+          <div class="flex flex-col items-center">
+            <div class="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-white tracking-tight mb-2" data-target="40" data-suffix="+">
+              0+
+            </div>
+            <div class="text-xs sm:text-sm font-medium text-content-muted">
+              Happy Clients
+            </div>
+          </div>
+
+          <!-- Column 4: 8 Creative Services -->
+          <div class="flex flex-col items-center">
+            <div class="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-white tracking-tight mb-2" data-target="8" data-suffix="">
+              0
+            </div>
+            <div class="text-xs sm:text-sm font-medium text-content-muted">
+              Creative Services
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- ==================== END STATS BAND ==================== -->
+
+
+    <!-- ==================== SECTION: TESTIMONIALS (#testimonials) ==================== -->
+    <!-- Background: Slightly lighter #0F172A (alternating subtly) -->
+    <section id="testimonials" class="py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-navy-900 border-t border-slate-800/60 reveal-on-scroll">
+      <div class="max-w-container mx-auto w-full">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <!-- Eyebrow: "CLIENT LOVE" -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-slate-800/90 border border-slate-700/80 text-accent-cyan text-xs font-bold uppercase tracking-wider mb-4">
+            CLIENT LOVE
+          </div>
+
+          <!-- Heading: "What Clients Say About Working With Me" -->
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-white tracking-tight mb-4">
+            What Clients Say <span class="text-gradient-accent">About Working With Me</span>
+          </h2>
+
+          <!-- Subtext -->
+          <p class="text-content-muted text-sm sm:text-base leading-relaxed">
+            Real feedback from real business owners I've helped scale.
+          </p>
+        </div>
+
+        <!-- 4 Testimonial Cards in a 2x2 Grid on Desktop, 1 Column on Mobile -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
+          
+          <!-- Testimonial Card 1 -->
+          <div class="card-navy p-6 sm:p-8 rounded-card border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-colors shadow-soft">
+            <div>
+              <!-- 5 Gold Stars on Top -->
+              <div class="flex items-center gap-1.5 text-accent-gold text-sm mb-4">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <!-- Client Quote -->
+              <p class="text-content-body text-sm sm:text-base leading-relaxed italic mb-6">
+                "Client feedback will be added here."
+              </p>
+            </div>
+
+            <!-- Client Info Row: Circular Avatar with Initials, Name, Role, Green Verified Checkmark -->
+            <div class="flex items-center gap-3.5 pt-4 border-t border-slate-800/80">
+              <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-accent-blue/25 to-accent-violet/25 border border-accent-blue/35 flex items-center justify-center font-heading font-bold text-white text-xs shrink-0 shadow-sm">
+                CR
+              </div>
+              <div class="flex flex-col text-left">
+                <div class="flex items-center gap-1.5">
+                  <span class="font-heading font-bold text-white text-sm">Client Review 01</span>
+                  <i class="fa-solid fa-circle-check text-accent-green text-xs" title="Verified Client"></i>
+                </div>
+                <span class="text-xs text-content-muted font-medium">Graphic Design Client</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Card 2 -->
+          <div class="card-navy p-6 sm:p-8 rounded-card border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-colors shadow-soft">
+            <div>
+              <!-- 5 Gold Stars on Top -->
+              <div class="flex items-center gap-1.5 text-accent-gold text-sm mb-4">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <!-- Client Quote -->
+              <p class="text-content-body text-sm sm:text-base leading-relaxed italic mb-6">
+                "Client feedback will be added here."
+              </p>
+            </div>
+
+            <!-- Client Info Row: Circular Avatar with Initials, Name, Role, Green Verified Checkmark -->
+            <div class="flex items-center gap-3.5 pt-4 border-t border-slate-800/80">
+              <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-accent-violet/25 to-accent-cyan/25 border border-accent-violet/35 flex items-center justify-center font-heading font-bold text-white text-xs shrink-0 shadow-sm">
+                CR
+              </div>
+              <div class="flex flex-col text-left">
+                <div class="flex items-center gap-1.5">
+                  <span class="font-heading font-bold text-white text-sm">Client Review 02</span>
+                  <i class="fa-solid fa-circle-check text-accent-green text-xs" title="Verified Client"></i>
+                </div>
+                <span class="text-xs text-content-muted font-medium">Digital Content Client</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Card 3 -->
+          <div class="card-navy p-6 sm:p-8 rounded-card border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-colors shadow-soft">
+            <div>
+              <!-- 5 Gold Stars on Top -->
+              <div class="flex items-center gap-1.5 text-accent-gold text-sm mb-4">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <!-- Client Quote -->
+              <p class="text-content-body text-sm sm:text-base leading-relaxed italic mb-6">
+                "Client feedback will be added here."
+              </p>
+            </div>
+
+            <!-- Client Info Row: Circular Avatar with Initials, Name, Role, Green Verified Checkmark -->
+            <div class="flex items-center gap-3.5 pt-4 border-t border-slate-800/80">
+              <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-accent-cyan/25 to-accent-blue/25 border border-accent-cyan/35 flex items-center justify-center font-heading font-bold text-white text-xs shrink-0 shadow-sm">
+                CR
+              </div>
+              <div class="flex flex-col text-left">
+                <div class="flex items-center gap-1.5">
+                  <span class="font-heading font-bold text-white text-sm">Client Review 03</span>
+                  <i class="fa-solid fa-circle-check text-accent-green text-xs" title="Verified Client"></i>
+                </div>
+                <span class="text-xs text-content-muted font-medium">AI Design Client</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Card 4 -->
+          <div class="card-navy p-6 sm:p-8 rounded-card border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-colors shadow-soft">
+            <div>
+              <!-- 5 Gold Stars on Top -->
+              <div class="flex items-center gap-1.5 text-accent-gold text-sm mb-4">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <!-- Client Quote -->
+              <p class="text-content-body text-sm sm:text-base leading-relaxed italic mb-6">
+                "Client feedback will be added here."
+              </p>
+            </div>
+
+            <!-- Client Info Row: Circular Avatar with Initials, Name, Role, Green Verified Checkmark -->
+            <div class="flex items-center gap-3.5 pt-4 border-t border-slate-800/80">
+              <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-accent-green/25 to-accent-blue/25 border border-accent-green/35 flex items-center justify-center font-heading font-bold text-white text-xs shrink-0 shadow-sm">
+                CR
+              </div>
+              <div class="flex flex-col text-left">
+                <div class="flex items-center gap-1.5">
+                  <span class="font-heading font-bold text-white text-sm">Client Review 04</span>
+                  <i class="fa-solid fa-circle-check text-accent-green text-xs" title="Verified Client"></i>
+                </div>
+                <span class="text-xs text-content-muted font-medium">Stock Content Client</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- ==================== END SECTION: TESTIMONIALS ==================== -->
+
+
+    <!-- ==================== SECTION: FAQ (#faq) ==================== -->
+    <!-- Background: Slightly lighter #111827 (alternating subtly) -->
+    <section id="faq" class="py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-navy-850 border-t border-slate-800/60 reveal-on-scroll">
+      <div class="max-w-3xl mx-auto w-full text-center">
+        
+        <!-- Heading -->
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-white tracking-tight mb-4">
+          Frequently Asked <span class="text-gradient-accent">Questions</span>
+        </h2>
+
+        <!-- Subtext -->
+        <p class="text-content-muted text-sm sm:text-base leading-relaxed mb-12">
+          Everything you need to know before we start working together.
+        </p>
+
+        <!-- 4 Accordion Items (Centred in a single column, closed by default, multiple can stay open) -->
+        <div class="flex flex-col gap-4 text-left">
+          
+          <!-- FAQ Item 1 -->
+          <div class="card-navy rounded-2xl border border-slate-800 overflow-hidden shadow-soft transition-colors hover:border-slate-700">
+            <button type="button" class="faq-accordion-btn w-full p-5 sm:p-6 flex items-center justify-between gap-4 text-left font-heading font-bold text-base sm:text-lg text-white focus:outline-none">
+              <span>What design services do you offer?</span>
+              <span class="w-8 h-8 rounded-full bg-slate-800/80 border border-slate-700 flex items-center justify-center shrink-0 text-accent-cyan text-sm transition-transform duration-300">
+                <i class="fa-solid fa-plus faq-math-icon"></i>
+              </span>
+            </button>
+            <div class="faq-accordion-content hidden px-5 sm:px-6 pb-6 text-content-body text-xs sm:text-sm leading-relaxed border-t border-slate-800/60 pt-4">
+              I offer graphic design, AI image generation, vector illustrations, stock content creation, background design, seamless patterns, social media graphics, and AI-assisted video content.
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="card-navy rounded-2xl border border-slate-800 overflow-hidden shadow-soft transition-colors hover:border-slate-700">
+            <button type="button" class="faq-accordion-btn w-full p-5 sm:p-6 flex items-center justify-between gap-4 text-left font-heading font-bold text-base sm:text-lg text-white focus:outline-none">
+              <span>Do you create AI-generated stock images?</span>
+              <span class="w-8 h-8 rounded-full bg-slate-800/80 border border-slate-700 flex items-center justify-center shrink-0 text-accent-cyan text-sm transition-transform duration-300">
+                <i class="fa-solid fa-plus faq-math-icon"></i>
+              </span>
+            </button>
+            <div class="faq-accordion-content hidden px-5 sm:px-6 pb-6 text-content-body text-xs sm:text-sm leading-relaxed border-t border-slate-800/60 pt-4">
+              Yes. I create AI-assisted visual content and creative digital assets, following the relevant stock platform's submission and disclosure requirements.
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="card-navy rounded-2xl border border-slate-800 overflow-hidden shadow-soft transition-colors hover:border-slate-700">
+            <button type="button" class="faq-accordion-btn w-full p-5 sm:p-6 flex items-center justify-between gap-4 text-left font-heading font-bold text-base sm:text-lg text-white focus:outline-none">
+              <span>Can you create custom designs for businesses?</span>
+              <span class="w-8 h-8 rounded-full bg-slate-800/80 border border-slate-700 flex items-center justify-center shrink-0 text-accent-cyan text-sm transition-transform duration-300">
+                <i class="fa-solid fa-plus faq-math-icon"></i>
+              </span>
+            </button>
+            <div class="faq-accordion-content hidden px-5 sm:px-6 pb-6 text-content-body text-xs sm:text-sm leading-relaxed border-t border-slate-800/60 pt-4">
+              Yes. I can create customized graphics, promotional visuals, backgrounds, and creative digital content based on project requirements.
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="card-navy rounded-2xl border border-slate-800 overflow-hidden shadow-soft transition-colors hover:border-slate-700">
+            <button type="button" class="faq-accordion-btn w-full p-5 sm:p-6 flex items-center justify-between gap-4 text-left font-heading font-bold text-base sm:text-lg text-white focus:outline-none">
+              <span>How can I contact you for a project?</span>
+              <span class="w-8 h-8 rounded-full bg-slate-800/80 border border-slate-700 flex items-center justify-center shrink-0 text-accent-cyan text-sm transition-transform duration-300">
+                <i class="fa-solid fa-plus faq-math-icon"></i>
+              </span>
+            </button>
+            <div class="faq-accordion-content hidden px-5 sm:px-6 pb-6 text-content-body text-xs sm:text-sm leading-relaxed border-t border-slate-800/60 pt-4">
+              <p class="mb-3">You can contact me through email or WhatsApp to discuss your project, requirements, and pricing:</p>
+              <div class="flex flex-col sm:flex-row gap-3 text-xs">
+                <a href="mailto:aihridoymiah212@gmail.com" class="inline-flex items-center gap-2 text-white hover:text-accent-cyan transition-colors">
+                  <i class="fa-solid fa-envelope text-accent-cyan"></i>
+                  <span>aihridoymiah212@gmail.com</span>
+                </a>
+                <a href="https://wa.me/8801629820808" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-white hover:text-accent-green transition-colors">
+                  <i class="fa-brands fa-whatsapp text-accent-green"></i>
+                  <span>+8801629820808</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- ==================== END SECTION: FAQ ==================== -->
+
+
+    <!-- ==================== SECTION: CONTACT (#contact) ==================== -->
+    <!-- Background: Very dark navy #0B1220 -->
+    <section id="contact" class="py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-navy-950 border-t border-slate-800/60 reveal-on-scroll">
+      <div class="max-w-container mx-auto w-full">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-white tracking-tight mb-4">
+            Let's Fix <span class="text-gradient-accent">Your Business</span>
+          </h2>
+          <p class="text-content-muted text-sm sm:text-base leading-relaxed">
+            Tell me what's holding your revenue back, and let's build a strategy to overcome it.
+          </p>
+        </div>
+
+        <!-- 2 Columns on Desktop, Vertically Stacked on Mobile -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+          
+          <!-- Left Column: Glass Card with Office Location, Email, WhatsApp + Google Map -->
+          <div class="lg:col-span-5 flex flex-col gap-6">
+            
+            <!-- Glass Card with Contact Info -->
+            <div class="card-navy p-6 sm:p-7 rounded-card border border-slate-800/90 shadow-soft flex flex-col gap-5">
+              
+              <!-- Office Location Item -->
+              <div class="flex items-start gap-4">
+                <div class="w-11 h-11 rounded-full bg-slate-800/80 border border-slate-700/80 flex items-center justify-center shrink-0 text-accent-blue text-base shadow-sm">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <span class="block text-xs font-semibold uppercase tracking-wider text-content-muted">Office Location</span>
+                  <span class="text-sm font-bold text-white">Tangail, Bangladesh</span>
+                </div>
+              </div>
+
+              <!-- Email Address Item -->
+              <div class="flex items-start gap-4">
+                <div class="w-11 h-11 rounded-full bg-slate-800/80 border border-slate-700/80 flex items-center justify-center shrink-0 text-accent-blue text-base shadow-sm">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <span class="block text-xs font-semibold uppercase tracking-wider text-content-muted">Email Address</span>
+                  <a href="mailto:aihridoymiah212@gmail.com" class="text-sm font-bold text-white hover:text-accent-cyan transition-colors">aihridoymiah212@gmail.com</a>
+                </div>
+              </div>
+
+              <!-- WhatsApp Number Item -->
+              <div class="flex items-start gap-4">
+                <div class="w-11 h-11 rounded-full bg-slate-800/80 border border-slate-700/80 flex items-center justify-center shrink-0 text-accent-blue text-base shadow-sm">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div>
+                  <span class="block text-xs font-semibold uppercase tracking-wider text-content-muted">WhatsApp Number</span>
+                  <a href="https://wa.me/8801629820808" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-white hover:text-accent-green transition-colors">+8801629820808</a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Google Map of Tangail, Bangladesh (dark style, grayscale that becomes colour on hover) -->
+            <div class="card-navy p-2 rounded-card border border-slate-800/90 overflow-hidden shadow-soft">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116492.20455986566!2d89.85698579999999!3d24.2513417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fdfb4515582f6f%3A0x6b84dc621a69a489!2sTangail!5e0!3m2!1sen!2sbd!4v1700000000000!5m2!1sen!2sbd" 
+                class="w-full h-56 sm:h-64 rounded-xl border border-slate-800/80 filter grayscale contrast-125 hover:grayscale-0 transition-all duration-500" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Office Location Map - Tangail, Bangladesh">
+              </iframe>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Contact Form with id="contact-form" and exactly 4 required fields -->
+          <div class="lg:col-span-7">
+            <div class="card-navy p-6 sm:p-8 rounded-card border border-slate-800/90 shadow-soft">
+              
+              <form id="contact-form" class="space-y-5">
+                
+                <!-- Row 1: Name and Email side by side in 2 columns on desktop -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  
+                  <!-- Field 1: Your Name -->
+                  <div>
+                    <label for="name" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                      Your Name <span class="text-rose-400">*</span>
+                    </label>
+                    <input 
+                      type="text" 
+                      id="name" 
+                      name="Name" 
+                      placeholder="John Doe" 
+                      required 
+                      class="w-full px-4 py-3 rounded-xl bg-[#0B1220] border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-accent-blue focus:ring-1 focus:ring-accent-blue transition-all text-sm"
+                    />
+                  </div>
+
+                  <!-- Field 2: Email Address -->
+                  <div>
+                    <label for="email" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                      Email Address <span class="text-rose-400">*</span>
+                    </label>
+                    <input 
+                      type="email" 
+                      id="email" 
+                      name="Email" 
+                      placeholder="john@example.com" 
+                      required 
+                      class="w-full px-4 py-3 rounded-xl bg-[#0B1220] border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-accent-blue focus:ring-1 focus:ring-accent-blue transition-all text-sm"
+                    />
+                  </div>
+
+                </div>
+
+                <!-- Field 3: WhatsApp Number (full width) -->
+                <div>
+                  <label for="whatsapp" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                    WhatsApp Number <span class="text-rose-400">*</span>
+                  </label>
+                  <input 
+                    type="tel" 
+                    id="whatsapp" 
+                    name="WhatsApp" 
+                    placeholder="e.g. +1 234 567 8900" 
+                    required 
+                    class="w-full px-4 py-3 rounded-xl bg-[#0B1220] border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-accent-blue focus:ring-1 focus:ring-accent-blue transition-all text-sm"
+                  />
+                </div>
+
+                <!-- Field 4: Describe Your Problem (full width) -->
+                <div>
+                  <label for="message" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                    Describe Your Problem <span class="text-rose-400">*</span>
+                  </label>
+                  <textarea 
+                    id="message" 
+                    name="Message" 
+                    rows="4" 
+                    placeholder="Explain what issues your business is currently facing..." 
+                    required 
+                    class="w-full px-4 py-3 rounded-xl bg-[#0B1220] border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-accent-blue focus:ring-1 focus:ring-accent-blue transition-all text-sm resize-none"
+                  ></textarea>
+                </div>
+
+                <!-- Submit Button: full-width gradient button -->
+                <div class="pt-2">
+                  <button 
+                    type="submit" 
+                    id="submit-btn" 
+                    class="btn-primary-pill w-full !py-3.5 !rounded-xl flex items-center justify-center gap-2.5 text-sm sm:text-base font-bold shadow-soft group cursor-pointer"
+                  >
+                    <i class="fa-solid fa-paper-plane text-xs group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+                    <span>Send Message</span>
+                  </button>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- ==================== END SECTION: CONTACT ==================== -->
+
+  </main>
+
+
+  <!-- ==================== 4. FOOTER ==================== -->
+  <!-- Background slightly darker than the rest of the page (#060912) -->
+  <footer class="relative z-10 border-t border-slate-800 bg-[#060912] pt-16 pb-8 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-container mx-auto">
+      
+      <!-- 3 Columns on Desktop, 1 Column on Mobile -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-12 pb-12">
+        
+        <!-- Left Column: Heading "{{FULL_NAME}}" in bold white, 2-3 line short bio, 5 social icons in dark circles -->
+        <div class="md:col-span-5 flex flex-col items-start text-left">
+          <h3 class="font-heading font-extrabold text-xl sm:text-2xl text-white tracking-tight mb-3">
+            Hridoy Miah
+          </h3>
+          <p class="text-content-muted text-xs sm:text-sm leading-relaxed mb-6 max-w-sm">
+            Passionate Digital Designer and AI Creative Content Creator specializing in high-quality digital designs, creative illustrations, vector graphics, and commercial stock assets.
+          </p>
+
+          <!-- 5 Social Icons in Dark Circles: Facebook, LinkedIn, GitHub, WhatsApp, Telegram -->
+          <div class="flex items-center gap-2.5">
+            <a href="https://www.facebook.com/md.hridoy.9256/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-white hover:border-accent-blue hover:bg-slate-800 transition-all text-xs">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://bd.linkedin.com/in/hridoy-miah-zbd" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-white hover:border-accent-blue hover:bg-slate-800 transition-all text-xs">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/aihridoymiah212-maker" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-white hover:border-accent-blue hover:bg-slate-800 transition-all text-xs">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://wa.me/8801629820808" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-accent-green hover:border-accent-green hover:bg-slate-800 transition-all text-xs">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://t.me/+8801629820808" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-accent-cyan hover:border-accent-cyan hover:bg-slate-800 transition-all text-xs">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Middle Column: Heading "Quick Links", 5 links in order: Home, About Me, Solutions, Case Studies, Contact -->
+        <div class="md:col-span-3 flex flex-col items-start text-left">
+          <h4 class="font-heading font-bold text-sm sm:text-base text-white tracking-wider uppercase mb-4">
+            Quick Links
+          </h4>
+          <ul class="flex flex-col gap-2.5 text-xs sm:text-sm text-content-body font-medium">
+            <li>
+              <a href="#home" class="hover:text-accent-cyan transition-colors">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="hover:text-accent-cyan transition-colors">About Me</a>
+            </li>
+            <li>
+              <a href="#services" class="hover:text-accent-cyan transition-colors">Solutions</a>
+            </li>
+            <li>
+              <a href="#results" class="hover:text-accent-cyan transition-colors">Case Studies</a>
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-accent-cyan transition-colors">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Column: Heading "Contact Info", 3 items with blue icon inside dark circle -->
+        <div class="md:col-span-4 flex flex-col items-start text-left">
+          <h4 class="font-heading font-bold text-sm sm:text-base text-white tracking-wider uppercase mb-4">
+            Contact Info
+          </h4>
+          <div class="flex flex-col gap-4 w-full">
+            
+            <!-- Item 1: Office Location -->
+            <div class="flex items-start gap-3">
+              <div class="w-9 h-9 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center shrink-0 text-accent-blue text-xs shadow-sm mt-0.5">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <span class="block text-xs font-bold text-white">Office Location</span>
+                <span class="text-xs text-content-body">Tangail, Bangladesh</span>
+              </div>
+            </div>
+
+            <!-- Item 2: Email Address -->
+            <div class="flex items-start gap-3">
+              <div class="w-9 h-9 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center shrink-0 text-accent-blue text-xs shadow-sm mt-0.5">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <span class="block text-xs font-bold text-white">Email Address</span>
+                <a href="mailto:aihridoymiah212@gmail.com" class="text-xs text-content-body hover:text-accent-cyan transition-colors truncate block max-w-[200px]">aihridoymiah212@gmail.com</a>
+              </div>
+            </div>
+
+            <!-- Item 3: WhatsApp Number -->
+            <div class="flex items-start gap-3">
+              <div class="w-9 h-9 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center shrink-0 text-accent-blue text-xs shadow-sm mt-0.5">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div>
+                <span class="block text-xs font-bold text-white">WhatsApp Number</span>
+                <a href="https://wa.me/8801629820808" target="_blank" rel="noopener noreferrer" class="text-xs text-content-body hover:text-accent-green transition-colors">+8801629820808</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar with Thin Top Border -->
+      <div class="pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-content-muted text-center sm:text-left">
+        <p>© 2026 Hridoy Miah. All rights reserved. | <a href="#" class="hover:text-white transition-colors">Privacy Policy</a></p>
+        <p class="text-[11px] text-slate-500">Creative Designs. Innovative Ideas. Digital Excellence.</p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ==================== 5. VANILLA JAVASCRIPT SYSTEM ==================== -->
+  <script>
+    const TELEGRAM_BOT_TOKEN = "{{TELEGRAM_BOT_TOKEN}}";
+    const TELEGRAM_CHAT_ID = "{{TELEGRAM_CHAT_ID}}";
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyCpCTz2duU_J_WMhPVrlo_gS0lGmLAnkyqJ4h7z7VhnruHToi9Dxr1d_IhKwQQbzSP/exec";
+
+    // --- 1. Loading Screen Animation ---
+    window.addEventListener('DOMContentLoaded', () => {
+      const loadingScreen = document.getElementById('loading-screen');
+      const progressBar = document.getElementById('loading-progress-bar');
+      const progressText = document.getElementById('loading-progress-text');
+
+      let progress = 0;
+      const interval = setInterval(() => {
+        progress += Math.floor(Math.random() * 12) + 8;
+        if (progress >= 100) {
+          progress = 100;
+          clearInterval(interval);
+          if (progressBar) progressBar.style.width = '100%';
+          if (progressText) progressText.textContent = '100%';
+          
+          setTimeout(() => {
+            if (loadingScreen) {
+              loadingScreen.classList.add('opacity-0', 'pointer-events-none');
+              setTimeout(() => {
+                loadingScreen.style.display = 'none';
+              }, 700);
+            }
+          }, 350);
+        } else {
+          if (progressBar) progressBar.style.width = `${progress}%`;
+          if (progressText) progressText.textContent = `${progress}%`;
+        }
+      }, 70);
+
+      // --- 2. Mobile Menu Toggle ---
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const menuIcon = document.getElementById('menuIcon');
+      const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+          const isExpanded = !mobileMenu.classList.contains('hidden');
+          if (isExpanded) {
+            mobileMenu.classList.add('hidden');
+            if (menuIcon) {
+              menuIcon.classList.remove('fa-xmark');
+              menuIcon.classList.add('fa-bars');
+            }
+          } else {
+            mobileMenu.classList.remove('hidden');
+            if (menuIcon) {
+              menuIcon.classList.remove('fa-bars');
+              menuIcon.classList.add('fa-xmark');
+            }
+          }
+        });
+
+        mobileLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            if (menuIcon) {
+              menuIcon.classList.remove('fa-xmark');
+              menuIcon.classList.add('fa-bars');
+            }
+          });
+        });
+      }
+
+      // --- 3. Navbar Elevation on Scroll ---
+      const siteHeader = document.getElementById('site-header');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 40) {
+          siteHeader.classList.add('py-2');
+          siteHeader.classList.remove('py-4');
+        } else {
+          siteHeader.classList.add('py-4');
+          siteHeader.classList.remove('py-2');
+        }
+      });
+
+      // --- 4. Reusable Typewriter Effect Utility ---
+      window.initTypewriter = function(elementId, words, typingSpeed = 100, pauseTime = 2000) {
+        const targetElement = document.getElementById(elementId);
+        if (!targetElement) return;
+
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function type() {
+          const currentWord = words[wordIndex];
+          if (isDeleting) {
+            targetElement.textContent = currentWord.substring(0, charIndex - 1);
+            charIndex--;
+          } else {
+            targetElement.textContent = currentWord.substring(0, charIndex + 1);
+            charIndex++;
+          }
+
+          let speed = isDeleting ? typingSpeed / 2 : typingSpeed;
+
+          if (!isDeleting && charIndex === currentWord.length) {
+            speed = pauseTime;
+            isDeleting = true;
+          } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+            speed = 400;
+          }
+
+          setTimeout(type, speed);
+        }
+        type();
+      };
+
+      // --- 5. Reusable Count-Up Numbers Utility ---
+      window.initCountUp = function() {
+        const counterElements = document.querySelectorAll('[data-target]');
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const el = entry.target;
+              const target = parseInt(el.getAttribute('data-target'), 10);
+              const suffix = el.getAttribute('data-suffix') || '';
+              const duration = 1800;
+              const startTime = performance.now();
+
+              const updateNumber = (now) => {
+                const progress = Math.min((now - startTime) / duration, 1);
+                const currentVal = Math.floor(progress * (2 - progress) * target);
+                el.textContent = currentVal + suffix;
+                if (progress < 1) {
+                  requestAnimationFrame(updateNumber);
+                } else {
+                  el.textContent = target + suffix;
+                }
+              };
+              requestAnimationFrame(updateNumber);
+              observer.unobserve(el);
+            }
+          });
+        }, { threshold: 0.3 });
+
+        counterElements.forEach(el => observer.observe(el));
+      };
+
+      // --- 6. Reusable FAQ Accordion Utility (Multiple can stay open, plus/minus toggle) ---
+      window.initFaqAccordion = function() {
+        const faqBtns = document.querySelectorAll('.faq-accordion-btn');
+        faqBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            const content = btn.nextElementSibling;
+            const mathIcon = btn.querySelector('.faq-math-icon');
+            const isClosed = content.classList.contains('hidden');
+
+            if (isClosed) {
+              content.classList.remove('hidden');
+              if (mathIcon) {
+                mathIcon.classList.remove('fa-plus');
+                mathIcon.classList.add('fa-minus');
+              }
+            } else {
+              content.classList.add('hidden');
+              if (mathIcon) {
+                mathIcon.classList.remove('fa-minus');
+                mathIcon.classList.add('fa-plus');
+              }
+            }
+          });
+        });
+      };
+
+      // Initialize count-up numbers, hero typewriter & FAQ accordion
+      window.initCountUp();
+      window.initFaqAccordion();
+      window.initTypewriter('hero-typewriter', [
+        'AI Image Generation',
+        'Vector Illustrations',
+        'Adobe Stock Assets',
+        'n8n Automations',
+        'Social Media Graphics'
+      ], 80, 2000);
+
+      // --- 7. Contact Form Submission Handler (Telegram & Google Sheet) ---
+      const contactForm = document.getElementById('contact-form');
+      const submitBtn = document.getElementById('submit-btn');
+      const toast = document.getElementById('toast');
+
+      function showToast(message, isSuccess = true) {
+        if (!toast) return;
+        toast.textContent = message;
+        toast.className = `fixed bottom-6 right-6 z-50 transform translate-y-0 opacity-100 px-5 py-3.5 rounded-2xl shadow-2xl flex items-center gap-3 border text-sm font-semibold transition-all duration-300 ${
+          isSuccess ? 'bg-emerald-950/95 border-emerald-500/50 text-emerald-300' : 'bg-rose-950/95 border-rose-500/50 text-rose-300'
+        }`;
+        setTimeout(() => {
+          toast.className = 'fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 pointer-events-none transition-all duration-300 px-5 py-3.5 rounded-2xl shadow-2xl flex items-center gap-3 border text-sm font-semibold';
+        }, 3000);
+      }
+
+      if (contactForm && submitBtn) {
+        contactForm.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          const originalBtnHtml = submitBtn.innerHTML;
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Sending...';
+
+          const formData = new FormData(contactForm);
+          const requests = [];
+
+          // 1. Send to Google Sheet (mode: 'no-cors')
+          if (GOOGLE_SCRIPT_URL && GOOGLE_SCRIPT_URL.trim() !== '' && !GOOGLE_SCRIPT_URL.includes('{{')) {
+            const googlePromise = fetch(GOOGLE_SCRIPT_URL, {
+              method: 'POST',
+              body: formData,
+              mode: 'no-cors'
+            });
+            requests.push(googlePromise);
+          }
+
+          // 2. Send to Telegram (plain text only)
+          if (
+            TELEGRAM_BOT_TOKEN && 
+            TELEGRAM_CHAT_ID && 
+            TELEGRAM_BOT_TOKEN.trim() !== '' && 
+            TELEGRAM_CHAT_ID.trim() !== '' && 
+            !TELEGRAM_BOT_TOKEN.includes('{{') && 
+            !TELEGRAM_CHAT_ID.includes('{{')
+          ) {
+            const telegramMessage = `New Client Inquiry!\n\nName: ${formData.get('Name')}\nEmail: ${formData.get('Email')}\nWhatsApp: ${formData.get('WhatsApp')}\n\nProblem Description:\n${formData.get('Message')}`;
+            const telegramPromise = fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                chat_id: TELEGRAM_CHAT_ID,
+                text: telegramMessage
+              })
+            });
+            requests.push(telegramPromise);
+          }
+
+          try {
+            if (requests.length > 0) {
+              await Promise.all(requests);
+            }
+            showToast("Message sent successfully!", true);
+            contactForm.reset();
+          } catch (err) {
+            console.error('Submission error:', err);
+            showToast("Failed to send a message. Please try again.", false);
+          } finally {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnHtml;
+          }
+        });
+      }
+
+      // --- 8. Right-Edge Scroll Progress Bar ---
+      const scrollProgressBar = document.getElementById('scroll-progress-bar');
+      window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        if (scrollProgressBar) {
+          scrollProgressBar.style.height = `${scrollPercent}%`;
+        }
+      });
+
+      // --- 9. Smooth Scrolling for Anchor Links with Header Offset ---
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href');
+          if (targetId === '#' || targetId === '') return;
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            e.preventDefault();
+            const headerOffset = 72;
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+
+      // --- 10. Fade & Slide-in Reveal on Scroll ---
+      const revealElements = document.querySelectorAll('.reveal-on-scroll');
+      if (revealElements.length > 0) {
+        const revealObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+      // --- 11. Project Category Filter ---
+      const filterBtns = document.querySelectorAll('.project-filter-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.getAttribute('data-filter');
+
+          filterBtns.forEach(b => {
+            b.classList.remove('active', 'bg-white', 'text-navy-950', 'shadow-md', 'shadow-white/10');
+            b.classList.add('bg-white/5', 'text-zinc-400');
+          });
+          btn.classList.add('active', 'bg-white', 'text-navy-950', 'shadow-md', 'shadow-white/10');
+          btn.classList.remove('bg-white/5', 'text-zinc-400');
+
+          projectCards.forEach(card => {
+            const category = card.getAttribute('data-category');
+            if (filter === 'all' || category === filter) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      }
+    });
+  </script>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 pointer-events-none transition-all duration-300 px-5 py-3.5 rounded-2xl shadow-2xl flex items-center gap-3 border text-sm font-semibold"></div>
+</body>
+</html>
