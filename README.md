@@ -30,6 +30,7 @@ Single-page website built with HTML, Tailwind CSS (CDN), Google Fonts and Font A
 ## Contact
 
 - GitHub: [@aihridoymiah212-maker](https://github.com/aihridoymiah212-maker)
+- YouTube: [@HridoyZBD](https://www.youtube.com/@HridoyZBD)
 - LinkedIn: [hridoy-miah-zbd](https://bd.linkedin.com/in/hridoy-miah-zbd)
 - Facebook: [md.hridoy.9256](https://www.facebook.com/md.hridoy.9256/)
 - WhatsApp: [+880 1629-820808](https://wa.me/8801629820808)
