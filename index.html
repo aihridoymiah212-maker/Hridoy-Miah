@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#09090B">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#09090B">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F4EEE1">
   <title>Hridoy Miah | Digital Designer & AI Creative Expert</title>
   
   <!-- SEO Meta Tags -->
@@ -35,6 +36,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
   <!-- Tailwind CSS CDN -->
+  <script>
+    (function () { try { var m = localStorage.getItem('hm-theme') || 'system'; var dark = m === 'dark' || (m === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches); if (!dark) document.documentElement.classList.add('light'); } catch (e) {} })();
+  </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -48,11 +52,11 @@
               850: '#18181B', // Deep Charcoal 850
             },
             accent: {
-              blue: '#2563EB',    // Brand Blue (favicon gradient start)
-              violet: '#7C3AED',  // Brand Violet (favicon gradient end)
-              cyan: '#22D3EE',    // Brand Cyan (favicon dot)
-              green: '#10B981',   // Minimal Emerald Status Dot
-              gold: '#F59E0B',    // Clean Rating Gold
+              blue: '#44403C',    // Charcoal Stone
+              violet: '#78716C',  // Warm Stone Gray
+              cyan: '#A8A29E',    // Soft Ash
+              green: '#7D8C6F',   // Muted Sage Status Dot
+              gold: '#B08D57',    // Muted Bronze Rating
             },
             content: {
               heading: '#FFFFFF', // Pure White Headings
@@ -73,8 +77,8 @@
           },
           boxShadow: {
             'soft': '0 10px 30px -5px rgba(0, 0, 0, 0.7), 0 0 1px 1px rgba(255, 255, 255, 0.08)',
-            'glow-blue': '0 0 30px rgba(37, 99, 235, 0.35)',
-            'glow-violet': '0 0 30px rgba(124, 58, 237, 0.35)',
+            'glow-blue': '0 0 30px rgba(68, 64, 60, 0.35)',
+            'glow-violet': '0 0 30px rgba(120, 113, 108, 0.30)',
           }
         }
       }
@@ -91,11 +95,11 @@
       background: #09090B;
     }
     ::-webkit-scrollbar-thumb {
-      background: linear-gradient(180deg, #2563EB 0%, #7C3AED 100%);
+      background: linear-gradient(180deg, #78716C 0%, #44403C 100%);
       border-radius: 9999px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: #2563EB;
+      background: #57534E;
     }
 
     /* Core Pill Buttons - Ultra-clean White & Glass */
@@ -104,16 +108,16 @@
       align-items: center;
       justify-content: center;
       border-radius: 9999px;
-      background: linear-gradient(135deg, #2563EB 0%, #7C3AED 100%);
-      color: #FFFFFF;
+      background: #F5EFE4;
+      color: #1C1917;
       font-weight: 700;
       padding: 0.65rem 1.75rem;
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-      box-shadow: 0 4px 20px -4px rgba(124, 58, 237, 0.55);
+      box-shadow: 0 4px 20px -6px rgba(0, 0, 0, 0.5);
     }
     .btn-primary-pill:hover {
-      background: linear-gradient(135deg, #1D4ED8 0%, #6D28D9 100%);
-      box-shadow: 0 10px 28px -6px rgba(124, 58, 237, 0.65);
+      background: #EDE5D3;
+      box-shadow: 0 10px 28px -8px rgba(0, 0, 0, 0.55);
       transform: translateY(-3px);
     }
 
@@ -152,7 +156,7 @@
 
     /* Metallic Silver / Pure White Gradient Text */
     .text-gradient-accent {
-      background: linear-gradient(135deg, #60A5FA 0%, #A78BFA 50%, #22D3EE 100%);
+      background: linear-gradient(135deg, #FAFAF9 0%, #D6D3D1 55%, #A8A29E 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -196,12 +200,71 @@
     /* Social brand colors: colored icons, tinted glow on hover */
     .social-brand i { color: var(--brand); }
     .social-brand:hover { border-color: var(--brand); background: color-mix(in srgb, var(--brand) 15%, transparent); box-shadow: 0 0 18px color-mix(in srgb, var(--brand) 40%, transparent); }
-    .brand-fb { --brand: #1877F2; }
-    .brand-li { --brand: #0A66C2; }
-    .brand-gh { --brand: #E6EDF3; }
-    .brand-yt { --brand: #FF0000; }
-    .brand-wa { --brand: #25D366; }
-    .brand-tg { --brand: #229ED9; }
+    .brand-fb { --brand: #A8A29E; }
+    .brand-li { --brand: #A8A29E; }
+    .brand-gh { --brand: #D6D3D1; }
+    .brand-yt { --brand: #A8A29E; }
+    .brand-wa { --brand: #A8A29E; }
+    .brand-tg { --brand: #A8A29E; }
+    /* ===== Theme toggle (Dark / Light / System) ===== */
+    .theme-toggle { display: inline-flex; align-items: center; gap: 2px; padding: 3px; border-radius: 9999px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.10); }
+    .theme-toggle button { width: 30px; height: 30px; border-radius: 9999px; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; color: #A8A29E; transition: all 0.25s ease; }
+    .theme-toggle button:hover { color: #FAFAF9; }
+    .theme-toggle button.active { background: #F5EFE4; color: #1C1917; }
+    html.light .theme-toggle { background: rgba(28, 25, 23, 0.05); border-color: rgba(28, 25, 23, 0.12); }
+    html.light .theme-toggle button { color: #78716C; }
+    html.light .theme-toggle button:hover { color: #1C1917; }
+    html.light .theme-toggle button.active { background: #1C1917; color: #F5EFE4; }
+
+    /* ===== Light theme: cream / gray / ash ===== */
+    html.light body { background-color: #F4EEE1; }
+    html.light .bg-navy-950 { background-color: #F4EEE1; }
+    html.light .bg-navy-900 { background-color: #EFE8D8; }
+    html.light .bg-navy-850 { background-color: #EAE0CB; }
+    html.light .bg-zinc-950 { background-color: #E7DFCE; }
+    html.light .bg-slate-900 { background-color: #FBF8F0; }
+    html.light .bg-zinc-800 { background-color: #E7DFCE; }
+    html.light .bg-slate-800\/80 { background-color: rgba(233, 225, 206, 0.85); }
+    html.light .bg-slate-800\/90 { background-color: rgba(233, 225, 206, 0.92); }
+    html.light .bg-zinc-800\/90 { background-color: rgba(233, 225, 206, 0.92); }
+    html.light .bg-zinc-900\/60 { background-color: rgba(28, 25, 23, 0.08); }
+    html.light .bg-white\/5 { background-color: rgba(28, 25, 23, 0.05); }
+    html.light .bg-white\/10 { background-color: rgba(28, 25, 23, 0.08); }
+    html.light .text-white { color: #1C1917; }
+    html.light .text-content-body { color: #57534E; }
+    html.light .text-content-muted { color: #7A7264; }
+    html.light .text-slate-200 { color: #292524; }
+    html.light .text-slate-300 { color: #44403C; }
+    html.light .text-slate-500 { color: #78716C; }
+    html.light .text-zinc-300 { color: #44403C; }
+    html.light .text-zinc-400 { color: #57534E; }
+    html.light .text-accent-cyan { color: #57534E; }
+    html.light .text-accent-violet { color: #44403C; }
+    html.light .text-accent-blue { color: #292524; }
+    html.light .text-accent-gold { color: #8A6D3B; }
+    html.light .text-accent-green { color: #5B6B4C; }
+    html.light .border-slate-800, html.light .border-slate-800\/60, html.light .border-slate-800\/80, html.light .border-slate-800\/90 { border-color: #E2D9C4; }
+    html.light .border-slate-700, html.light .border-slate-700\/60, html.light .border-slate-700\/80 { border-color: #D8CFB6; }
+    html.light .border-zinc-800\/80, html.light .border-zinc-800\/90 { border-color: #E2D9C4; }
+    html.light .border-white\/5, html.light .border-white\/10, html.light .border-white\/20 { border-color: rgba(28, 25, 23, 0.12); }
+    html.light .card-navy { background-color: #FBF8F0; border-color: #E2D9C4; box-shadow: 0 10px 30px -12px rgba(87, 83, 78, 0.28); }
+    html.light .card-navy:hover { border-color: rgba(28, 25, 23, 0.28); box-shadow: 0 20px 40px -14px rgba(87, 83, 78, 0.35); }
+    html.light #site-header { background: rgba(244, 238, 225, 0.92); border-color: #E2D9C4; }
+    html.light #mobileMenu { background-color: #EFE8D8; }
+    html.light .btn-primary-pill { background: #1C1917; color: #F5EFE4; box-shadow: 0 4px 20px -6px rgba(28, 25, 23, 0.45); }
+    html.light .btn-primary-pill:hover { background: #292524; box-shadow: 0 10px 28px -8px rgba(28, 25, 23, 0.5); }
+    html.light .btn-secondary-pill { background: rgba(28, 25, 23, 0.04); border-color: rgba(28, 25, 23, 0.20); color: #292524; }
+    html.light .btn-secondary-pill:hover { border-color: rgba(28, 25, 23, 0.45); color: #1C1917; background: rgba(28, 25, 23, 0.08); }
+    html.light .text-gradient-accent { background: linear-gradient(135deg, #1C1917 0%, #57534E 55%, #A8A29E 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+    html.light .social-brand { --brand: #57534E; }
+    html.light #loading-screen { background-color: #F4EEE1; }
+    html.light #contact-form input, html.light #contact-form textarea { background-color: #FFFDF6; border-color: #D8CFB6; color: #1C1917; }
+    html.light #contact-form input::placeholder, html.light #contact-form textarea::placeholder { color: #A39E93; }
+    html.light .img-chip { background-color: rgba(28, 25, 23, 0.85); color: #F5EFE4; border-color: rgba(255, 255, 255, 0.25); }
+    html.light .keep-dark .text-white { color: #FFFFFF; }
+    html.light .keep-dark .text-content-muted { color: #A1A1AA; }
+    html.light #toast .text-white { color: #FFFFFF; }
+
   </style>
   <script type="application/ld+json">
   {"@context": "https://schema.org", "@type": "Person", "name": "Hridoy Miah", "jobTitle": "Digital Designer & AI Creative Expert", "url": "https://aihridoymiah212-maker.github.io/Hridoy-Miah/", "address": {"@type": "PostalAddress", "addressLocality": "Tangail", "addressCountry": "BD"}, "sameAs": ["https://github.com/aihridoymiah212-maker", "https://www.youtube.com/@HridoyZBD", "https://bd.linkedin.com/in/hridoy-miah-zbd", "https://www.facebook.com/md.hridoy.9256/"]}
@@ -284,6 +347,12 @@
 
       <!-- Right: Blue-to-violet gradient pill button "Let's Talk" linking to #contact -->
       <div class="hidden md:flex items-center">
+        <div class="theme-toggle mr-3" role="group" aria-label="Theme mode">
+          <button type="button" data-theme-mode="dark" aria-label="Dark mode" title="Dark"><i class="fa-solid fa-moon"></i></button>
+          <button type="button" data-theme-mode="light" aria-label="Light mode" title="Light"><i class="fa-solid fa-sun"></i></button>
+          <button type="button" data-theme-mode="system" aria-label="System mode" title="System"><i class="fa-solid fa-circle-half-stroke"></i></button>
+        </div>
+        
         <a href="#contact" class="btn-primary-pill text-xs !py-2.5 !px-6">
           <span>Let's Talk</span>
         </a>
@@ -298,6 +367,15 @@
     <!-- Mobile Drawer Menu (Collapsed on mobile) -->
     <div id="mobileMenu" class="md:hidden hidden bg-[#0B1220] border-b border-slate-800 px-6 py-5">
       <div class="flex flex-col gap-3">
+        <div class="flex items-center justify-between pb-3 mb-1 border-b border-slate-800">
+          <span class="text-xs font-bold uppercase tracking-wider text-content-muted">Theme</span>
+          <div class="theme-toggle" role="group" aria-label="Theme mode">
+            <button type="button" data-theme-mode="dark" aria-label="Dark mode" title="Dark"><i class="fa-solid fa-moon"></i></button>
+            <button type="button" data-theme-mode="light" aria-label="Light mode" title="Light"><i class="fa-solid fa-sun"></i></button>
+            <button type="button" data-theme-mode="system" aria-label="System mode" title="System"><i class="fa-solid fa-circle-half-stroke"></i></button>
+          </div>
+        </div>
+        
         <a href="#home" class="mobile-nav-link text-sm font-semibold tracking-wider text-slate-300 hover:text-white py-2 px-3 rounded-lg hover:bg-slate-800/60 transition-colors">HOME</a>
         <a href="#about" class="mobile-nav-link text-sm font-semibold tracking-wider text-slate-300 hover:text-white py-2 px-3 rounded-lg hover:bg-slate-800/60 transition-colors">WHO AM I?</a>
         <a href="#services" class="mobile-nav-link text-sm font-semibold tracking-wider text-slate-300 hover:text-white py-2 px-3 rounded-lg hover:bg-slate-800/60 transition-colors">SOLUTIONS</a>
@@ -377,10 +455,10 @@
               <a href="https://www.youtube.com/@HridoyZBD" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-white hover:border-slate-500 hover:bg-slate-800 transition-all text-sm social-brand brand-yt">
                 <i class="fa-brands fa-youtube"></i>
               </a>
-              <a href="https://wa.me/8801629820808" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-accent-green hover:border-accent-green/40 hover:bg-slate-800 transition-all text-sm social-brand brand-wa">
+              <a href="https://wa.me/8801629820808" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-accent-green hover:border-white/25 hover:bg-slate-800 transition-all text-sm social-brand brand-wa">
                 <i class="fa-brands fa-whatsapp"></i>
               </a>
-              <a href="https://t.me/+8801629820808" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-accent-cyan hover:border-accent-cyan/40 hover:bg-slate-800 transition-all text-sm social-brand brand-tg">
+              <a href="https://t.me/+8801629820808" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-accent-cyan hover:border-white/25 hover:bg-slate-800 transition-all text-sm social-brand brand-tg">
                 <i class="fa-brands fa-telegram"></i>
               </a>
             </div>
@@ -475,7 +553,7 @@
               />
 
               <!-- Badge: {{YEARS_EXPERIENCE}}+ Years Experience -->
-              <div class="absolute bottom-6 left-6 right-6 sm:right-auto bg-[#0B1220]/95 backdrop-blur-md border border-slate-700/80 px-4 py-2.5 rounded-2xl shadow-soft flex items-center gap-3">
+              <div class="absolute bottom-6 left-6 right-6 sm:right-auto keep-dark bg-[#0B1220]/95 backdrop-blur-md border border-slate-700/80 px-4 py-2.5 rounded-2xl shadow-soft flex items-center gap-3">
                 <div class="w-8 h-8 rounded-xl bg-accent-blue/20 text-accent-cyan flex items-center justify-center text-sm font-bold">
                   <i class="fa-solid fa-award"></i>
                 </div>
@@ -503,7 +581,7 @@
               
               <!-- Feature Row 1 -->
               <div class="flex items-start gap-4">
-                <div class="w-11 h-11 rounded-xl bg-accent-blue/15 text-accent-cyan border border-accent-blue/25 flex items-center justify-center shrink-0 text-base shadow-sm">
+                <div class="w-11 h-11 rounded-xl bg-white/5 text-zinc-300 border border-white/10 flex items-center justify-center shrink-0 text-base shadow-sm">
                   <i class="fa-solid fa-pen-nib"></i>
                 </div>
                 <div>
@@ -514,7 +592,7 @@
 
               <!-- Feature Row 2 -->
               <div class="flex items-start gap-4">
-                <div class="w-11 h-11 rounded-xl bg-accent-blue/15 text-accent-cyan border border-accent-blue/25 flex items-center justify-center shrink-0 text-base shadow-sm">
+                <div class="w-11 h-11 rounded-xl bg-white/5 text-zinc-300 border border-white/10 flex items-center justify-center shrink-0 text-base shadow-sm">
                   <i class="fa-solid fa-wand-magic-sparkles"></i>
                 </div>
                 <div>
@@ -525,7 +603,7 @@
 
               <!-- Feature Row 3 -->
               <div class="flex items-start gap-4">
-                <div class="w-11 h-11 rounded-xl bg-accent-blue/15 text-accent-cyan border border-accent-blue/25 flex items-center justify-center shrink-0 text-base shadow-sm">
+                <div class="w-11 h-11 rounded-xl bg-white/5 text-zinc-300 border border-white/10 flex items-center justify-center shrink-0 text-base shadow-sm">
                   <i class="fa-solid fa-border-all"></i>
                 </div>
                 <div>
@@ -536,7 +614,7 @@
 
               <!-- Feature Row 4 -->
               <div class="flex items-start gap-4">
-                <div class="w-11 h-11 rounded-xl bg-accent-blue/15 text-accent-cyan border border-accent-blue/25 flex items-center justify-center shrink-0 text-base shadow-sm">
+                <div class="w-11 h-11 rounded-xl bg-white/5 text-zinc-300 border border-white/10 flex items-center justify-center shrink-0 text-base shadow-sm">
                   <i class="fa-solid fa-share-nodes"></i>
                 </div>
                 <div>
@@ -618,15 +696,15 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           
           <!-- Card 1: Graphic Design -->
-          <div class="card-navy p-6 rounded-card border border-slate-800 flex flex-col justify-between hover:-translate-y-1.5 hover:border-accent-blue/40 hover:shadow-glow-blue transition-all duration-300 group">
+          <div class="card-navy p-6 rounded-card border border-slate-800 flex flex-col justify-between hover:-translate-y-1.5 hover:border-white/25 hover:shadow-glow-blue transition-all duration-300 group">
             <div>
               <!-- Coloured Icon Tile on Top-Left -->
-              <div class="w-12 h-12 rounded-xl bg-accent-blue/15 text-accent-cyan border border-accent-blue/25 flex items-center justify-center text-lg mb-5 group-hover:scale-105 transition-transform">
+              <div class="w-12 h-12 rounded-xl bg-white/5 text-zinc-300 border border-white/10 flex items-center justify-center text-lg mb-5 group-hover:scale-105 transition-transform">
                 <i class="fa-solid fa-pen-nib"></i>
               </div>
 
               <!-- Service Title -->
-              <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-accent-cyan transition-colors">
+              <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-white transition-colors">
                 Graphic Design
               </h3>
 
@@ -666,15 +744,15 @@
           </div>
 
           <!-- Card 2: AI Image Generation -->
-          <div class="card-navy p-6 rounded-card border border-slate-800 flex flex-col justify-between hover:-translate-y-1.5 hover:border-accent-violet/40 hover:shadow-glow-violet transition-all duration-300 group">
+          <div class="card-navy p-6 rounded-card border border-slate-800 flex flex-col justify-between hover:-translate-y-1.5 hover:border-white/25 hover:shadow-glow-violet transition-all duration-300 group">
             <div>
               <!-- Coloured Icon Tile on Top-Left -->
-              <div class="w-12 h-12 rounded-xl bg-accent-violet/15 text-accent-violet border border-accent-violet/25 flex items-center justify-center text-lg mb-5 group-hover:scale-105 transition-transform">
+              <div class="w-12 h-12 rounded-xl bg-white/5 text-zinc-300 border border-white/10 flex items-center justify-center text-lg mb-5 group-hover:scale-105 transition-transform">
                 <i class="fa-solid fa-wand-magic-sparkles"></i>
               </div>
 
               <!-- Service Title -->
-              <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-accent-violet transition-colors">
+              <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-white transition-colors">
                 AI Image Generation
               </h3>
 
@@ -714,15 +792,15 @@
           </div>
 
           <!-- Card 3: Vector Illustration Design -->
-          <div class="card-navy p-6 rounded-card border border-slate-800 flex flex-col justify-between hover:-translate-y-1.5 hover:border-accent-cyan/40 hover:shadow-glow-blue transition-all duration-300 group">
+          <div class="card-navy p-6 rounded-card border border-slate-800 flex flex-col justify-between hover:-translate-y-1.5 hover:border-white/25 hover:shadow-glow-blue transition-all duration-300 group">
             <div>
               <!-- Coloured Icon Tile on Top-Left -->
-              <div class="w-12 h-12 rounded-xl bg-accent-cyan/15 text-accent-cyan border border-accent-cyan/25 flex items-center justify-center text-lg mb-5 group-hover:scale-105 transition-transform">
+              <div class="w-12 h-12 rounded-xl bg-white/5 text-zinc-300 border border-white/10 flex items-center justify-center text-lg mb-5 group-hover:scale-105 transition-transform">
                 <i class="fa-solid fa-bezier-curve"></i>
               </div>
 
               <!-- Service Title -->
-              <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-accent-cyan transition-colors">
+              <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-white transition-colors">
                 Vector Illustration Design
               </h3>
 
@@ -762,15 +840,15 @@
           </div>
 
           <!-- Card 4: Adobe Stock Content Creation -->
-          <div class="card-navy p-6 rounded-card border border-slate-800 flex flex-col justify-between hover:-translate-y-1.5 hover:border-accent-gold/40 hover:shadow-soft transition-all duration-300 group">
+          <div class="card-navy p-6 rounded-card border border-slate-800 flex flex-col justify-between hover:-translate-y-1.5 hover:border-white/25 hover:shadow-soft transition-all duration-300 group">
             <div>
               <!-- Coloured Icon Tile on Top-Left -->
-              <div class="w-12 h-12 rounded-xl bg-accent-gold/15 text-accent-gold border border-accent-gold/25 flex items-center justify-center text-lg mb-5 group-hover:scale-105 transition-transform">
+              <div class="w-12 h-12 rounded-xl bg-white/5 text-zinc-300 border border-white/10 flex items-center justify-center text-lg mb-5 group-hover:scale-105 transition-transform">
                 <i class="fa-solid fa-award"></i>
               </div>
 
               <!-- Service Title -->
-              <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-accent-gold transition-colors">
+              <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-white transition-colors">
                 Adobe Stock Content Creation
               </h3>
 
@@ -810,15 +888,15 @@
           </div>
 
           <!-- Card 5: Background & Texture Design -->
-          <div class="card-navy p-6 rounded-card border border-slate-800 flex flex-col justify-between hover:-translate-y-1.5 hover:border-rose-500/40 hover:shadow-soft transition-all duration-300 group">
+          <div class="card-navy p-6 rounded-card border border-slate-800 flex flex-col justify-between hover:-translate-y-1.5 hover:border-white/25 hover:shadow-soft transition-all duration-300 group">
             <div>
               <!-- Coloured Icon Tile on Top-Left -->
-              <div class="w-12 h-12 rounded-xl bg-rose-500/15 text-rose-400 border border-rose-500/25 flex items-center justify-center text-lg mb-5 group-hover:scale-105 transition-transform">
+              <div class="w-12 h-12 rounded-xl bg-white/5 text-zinc-300 border border-white/10 flex items-center justify-center text-lg mb-5 group-hover:scale-105 transition-transform">
                 <i class="fa-solid fa-cubes-stacked"></i>
               </div>
 
               <!-- Service Title -->
-              <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-rose-400 transition-colors">
+              <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-white transition-colors">
                 Background & Texture Design
               </h3>
 
@@ -858,15 +936,15 @@
           </div>
 
           <!-- Card 6: Seamless Pattern Design -->
-          <div class="card-navy p-6 rounded-card border border-slate-800 flex flex-col justify-between hover:-translate-y-1.5 hover:border-emerald-500/40 hover:shadow-soft transition-all duration-300 group">
+          <div class="card-navy p-6 rounded-card border border-slate-800 flex flex-col justify-between hover:-translate-y-1.5 hover:border-white/25 hover:shadow-soft transition-all duration-300 group">
             <div>
               <!-- Coloured Icon Tile on Top-Left -->
-              <div class="w-12 h-12 rounded-xl bg-emerald-500/15 text-emerald-400 border border-emerald-500/25 flex items-center justify-center text-lg mb-5 group-hover:scale-105 transition-transform">
+              <div class="w-12 h-12 rounded-xl bg-white/5 text-zinc-300 border border-white/10 flex items-center justify-center text-lg mb-5 group-hover:scale-105 transition-transform">
                 <i class="fa-solid fa-border-all"></i>
               </div>
 
               <!-- Service Title -->
-              <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-emerald-400 transition-colors">
+              <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-white transition-colors">
                 Seamless Pattern Design
               </h3>
 
@@ -906,15 +984,15 @@
           </div>
 
           <!-- Card 7: Social Media Design -->
-          <div class="card-navy p-6 rounded-card border border-slate-800 flex flex-col justify-between hover:-translate-y-1.5 hover:border-sky-500/40 hover:shadow-soft transition-all duration-300 group">
+          <div class="card-navy p-6 rounded-card border border-slate-800 flex flex-col justify-between hover:-translate-y-1.5 hover:border-white/25 hover:shadow-soft transition-all duration-300 group">
             <div>
               <!-- Coloured Icon Tile on Top-Left -->
-              <div class="w-12 h-12 rounded-xl bg-sky-500/15 text-sky-400 border border-sky-500/25 flex items-center justify-center text-lg mb-5 group-hover:scale-105 transition-transform">
+              <div class="w-12 h-12 rounded-xl bg-white/5 text-zinc-300 border border-white/10 flex items-center justify-center text-lg mb-5 group-hover:scale-105 transition-transform">
                 <i class="fa-solid fa-share-nodes"></i>
               </div>
 
               <!-- Service Title -->
-              <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-sky-400 transition-colors">
+              <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-white transition-colors">
                 Social Media Design
               </h3>
 
@@ -954,15 +1032,15 @@
           </div>
 
           <!-- Card 8: AI Video & Creative Content -->
-          <div class="card-navy p-6 rounded-card border border-slate-800 flex flex-col justify-between hover:-translate-y-1.5 hover:border-purple-500/40 hover:shadow-soft transition-all duration-300 group">
+          <div class="card-navy p-6 rounded-card border border-slate-800 flex flex-col justify-between hover:-translate-y-1.5 hover:border-white/25 hover:shadow-soft transition-all duration-300 group">
             <div>
               <!-- Coloured Icon Tile on Top-Left -->
-              <div class="w-12 h-12 rounded-xl bg-purple-500/15 text-purple-400 border border-purple-500/25 flex items-center justify-center text-lg mb-5 group-hover:scale-105 transition-transform">
+              <div class="w-12 h-12 rounded-xl bg-white/5 text-zinc-300 border border-white/10 flex items-center justify-center text-lg mb-5 group-hover:scale-105 transition-transform">
                 <i class="fa-solid fa-film"></i>
               </div>
 
               <!-- Service Title -->
-              <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-purple-400 transition-colors">
+              <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-white transition-colors">
                 AI Video & Creative Content
               </h3>
 
@@ -1060,20 +1138,20 @@
             </div>
 
             <!-- Chip 6: Google Flow -->
-            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-purple-400/50 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
+            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-white/25 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
               <i class="fa-solid fa-diagram-project text-purple-400 text-sm shrink-0 group-hover:scale-110 transition-transform"></i>
               <span class="text-[11px] sm:text-xs font-semibold text-slate-200 group-hover:text-white transition-colors truncate">Google Flow</span>
             </div>
 
             <!-- Chip 7: Veo -->
-            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-rose-400/50 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
+            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-white/25 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
               <i class="fa-solid fa-film text-rose-400 text-sm shrink-0 group-hover:scale-110 transition-transform"></i>
               <span class="text-[11px] sm:text-xs font-semibold text-slate-200 group-hover:text-white transition-colors truncate">Veo</span>
             </div>
 
             <!-- Chip 8: Pippit AI -->
-            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-amber-400/50 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
-              <i class="fa-solid fa-bolt text-amber-400 text-sm shrink-0 group-hover:scale-110 transition-transform"></i>
+            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-white/25 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
+              <i class="fa-solid fa-bolt text-accent-gold text-sm shrink-0 group-hover:scale-110 transition-transform"></i>
               <span class="text-[11px] sm:text-xs font-semibold text-slate-200 group-hover:text-white transition-colors truncate">Pippit AI</span>
             </div>
 
@@ -1084,7 +1162,7 @@
             </div>
 
             <!-- Chip 10: AI Image Generation Tools -->
-            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-emerald-400/50 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
+            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-white/25 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
               <i class="fa-solid fa-wand-magic text-emerald-400 text-sm shrink-0 group-hover:scale-110 transition-transform"></i>
               <span class="text-[11px] sm:text-xs font-semibold text-slate-200 group-hover:text-white transition-colors truncate">AI Image Tools</span>
             </div>
@@ -1102,7 +1180,7 @@
             </div>
 
             <!-- Chip 13: AI Design & Editing Tools -->
-            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-sky-400/50 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
+            <div class="bg-navy-950 hover:bg-slate-800/70 border border-slate-700/60 hover:border-white/25 rounded-xl p-2.5 sm:p-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left transition-all duration-200 group hover:-translate-y-0.5">
               <i class="fa-solid fa-sliders text-sky-400 text-sm shrink-0 group-hover:scale-110 transition-transform"></i>
               <span class="text-[11px] sm:text-xs font-semibold text-slate-200 group-hover:text-white transition-colors truncate">Design Tools</span>
             </div>
@@ -1196,7 +1274,7 @@
                   loading="lazy"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent opacity-75"></div>
-                <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-semibold bg-zinc-900/90 text-white border border-white/20 backdrop-blur-md">
+                <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-semibold img-chip bg-zinc-900/90 text-white border border-white/20 backdrop-blur-md">
                   AI Image Generation
                 </span>
               </div>
@@ -1237,7 +1315,7 @@
                   loading="lazy"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent opacity-75"></div>
-                <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-semibold bg-zinc-900/90 text-white border border-white/20 backdrop-blur-md">
+                <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-semibold img-chip bg-zinc-900/90 text-white border border-white/20 backdrop-blur-md">
                   Digital Content & SEO
                 </span>
               </div>
@@ -1278,7 +1356,7 @@
                   loading="lazy"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent opacity-75"></div>
-                <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-semibold bg-zinc-900/90 text-white border border-white/20 backdrop-blur-md">
+                <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-semibold img-chip bg-zinc-900/90 text-white border border-white/20 backdrop-blur-md">
                   Creative Content Writing
                 </span>
               </div>
@@ -1319,7 +1397,7 @@
                   loading="lazy"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent opacity-75"></div>
-                <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-semibold bg-zinc-900/90 text-white border border-white/20 backdrop-blur-md">
+                <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-semibold img-chip bg-zinc-900/90 text-white border border-white/20 backdrop-blur-md">
                   Workflow Automation
                 </span>
               </div>
@@ -1360,7 +1438,7 @@
                   loading="lazy"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent opacity-75"></div>
-                <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-semibold bg-zinc-900/90 text-white border border-white/20 backdrop-blur-md flex items-center gap-1.5">
+                <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-semibold img-chip bg-zinc-900/90 text-white border border-white/20 backdrop-blur-md flex items-center gap-1.5">
                   <i class="fa-solid fa-award text-zinc-300"></i>
                   <span>Adobe Stock Collection</span>
                 </span>
@@ -1399,7 +1477,7 @@
                 <div class="w-16 h-16 rounded-2xl bg-white/5 text-white border border-white/10 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
                   <i class="fa-solid fa-atom"></i>
                 </div>
-                <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-semibold bg-zinc-900/90 text-white border border-white/20 backdrop-blur-md">
+                <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-semibold img-chip bg-zinc-900/90 text-white border border-white/20 backdrop-blur-md">
                   Digital Content & AI Design
                 </span>
               </div>
@@ -1930,22 +2008,22 @@
 
           <!-- 6 Social Icons in Dark Circles: Facebook, LinkedIn, GitHub, YouTube, WhatsApp, Telegram -->
           <div class="flex items-center gap-2.5">
-            <a href="https://www.facebook.com/md.hridoy.9256/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-white hover:border-accent-blue hover:bg-slate-800 transition-all text-xs social-brand brand-fb">
+            <a href="https://www.facebook.com/md.hridoy.9256/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-white hover:border-white/25 hover:bg-slate-800 transition-all text-xs social-brand brand-fb">
               <i class="fa-brands fa-facebook-f"></i>
             </a>
-            <a href="https://bd.linkedin.com/in/hridoy-miah-zbd" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-white hover:border-accent-blue hover:bg-slate-800 transition-all text-xs social-brand brand-li">
+            <a href="https://bd.linkedin.com/in/hridoy-miah-zbd" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-white hover:border-white/25 hover:bg-slate-800 transition-all text-xs social-brand brand-li">
               <i class="fa-brands fa-linkedin-in"></i>
             </a>
-            <a href="https://github.com/aihridoymiah212-maker" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-white hover:border-accent-blue hover:bg-slate-800 transition-all text-xs social-brand brand-gh">
+            <a href="https://github.com/aihridoymiah212-maker" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-white hover:border-white/25 hover:bg-slate-800 transition-all text-xs social-brand brand-gh">
               <i class="fa-brands fa-github"></i>
             </a>
-            <a href="https://www.youtube.com/@HridoyZBD" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-white hover:border-accent-blue hover:bg-slate-800 transition-all text-xs social-brand brand-yt">
+            <a href="https://www.youtube.com/@HridoyZBD" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-white hover:border-white/25 hover:bg-slate-800 transition-all text-xs social-brand brand-yt">
               <i class="fa-brands fa-youtube"></i>
             </a>
-            <a href="https://wa.me/8801629820808" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-accent-green hover:border-accent-green hover:bg-slate-800 transition-all text-xs social-brand brand-wa">
+            <a href="https://wa.me/8801629820808" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-accent-green hover:border-white/25 hover:bg-slate-800 transition-all text-xs social-brand brand-wa">
               <i class="fa-brands fa-whatsapp"></i>
             </a>
-            <a href="https://t.me/+8801629820808" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-accent-cyan hover:border-accent-cyan hover:bg-slate-800 transition-all text-xs social-brand brand-tg">
+            <a href="https://t.me/+8801629820808" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-accent-cyan hover:border-white/25 hover:bg-slate-800 transition-all text-xs social-brand brand-tg">
               <i class="fa-brands fa-telegram"></i>
             </a>
           </div>
@@ -2070,6 +2148,20 @@
           if (progressText) progressText.textContent = `${progress}%`;
         }
       }, 50);
+
+      // --- 1b. Theme Mode: Dark / Light / System ---
+      const themeButtons = document.querySelectorAll('[data-theme-mode]');
+      const themeMedia = window.matchMedia('(prefers-color-scheme: dark)');
+      function getThemeMode() { try { return localStorage.getItem('hm-theme') || 'system'; } catch (e) { return 'system'; } }
+      function applyTheme(mode) {
+        try { localStorage.setItem('hm-theme', mode); } catch (e) {}
+        const dark = mode === 'dark' || (mode === 'system' && themeMedia.matches);
+        document.documentElement.classList.toggle('light', !dark);
+        themeButtons.forEach(b => b.classList.toggle('active', b.getAttribute('data-theme-mode') === mode));
+      }
+      themeButtons.forEach(b => b.addEventListener('click', () => applyTheme(b.getAttribute('data-theme-mode'))));
+      themeMedia.addEventListener('change', () => { if (getThemeMode() === 'system') applyTheme('system'); });
+      applyTheme(getThemeMode());
 
       // --- 2. Mobile Menu Toggle ---
       const mobileMenuBtn = document.getElementById('mobileMenuBtn');
